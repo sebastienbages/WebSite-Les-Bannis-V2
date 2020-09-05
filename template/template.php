@@ -19,6 +19,7 @@
         <meta property="og:image:height" content="627" />
         <meta property="og:image:alt" content="L'arène de Sobek !" />
         <link rel="shortcut icon" type="image/png" href="../img/belor.png" />
+        <link rel="stylesheet" href="../css/loader.css">
         <link rel="stylesheet" href="<?= $css ?>"/>
         <link rel="stylesheet" href="<?= $css_responsive ?>"/>
         <link rel="stylesheet" href="../css/header.css"/>
@@ -29,11 +30,30 @@
 
     <body>
         
+        <div class="loader">
+            <span class="letter">C</span>
+            <span class="letter">H</span>
+            <span class="letter">A</span>
+            <span class="letter">R</span>
+            <span class="letter">G</span>
+            <span class="letter">E</span>
+            <span class="letter">M</span>
+            <span class="letter">E</span>
+            <span class="letter">N</span>
+            <span class="letter">T</span>
+        </div>
+        
         <?php require('../header/header.php'); ?>
 
-        <?= $content ?>
+        <div class="content load-content">
+
+            <?= $content ?>
+
+        </div>
         
         <?php require('../footer/footer.php'); ?>
+
+        <script src="../js/loader.js"></script>
 
     </body>
 
