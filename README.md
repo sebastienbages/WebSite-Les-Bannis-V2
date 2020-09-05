@@ -4,7 +4,7 @@
 
 Site internet du Serveur FR Conan Exiles "Les Bannis"
 
-Languages utilisés : HTML/CSS/PHP
+Languages utilisés : HTML/CSS/JS/PHP
 
  - Architecture MVC
  - Utilisation d'un template
@@ -25,7 +25,7 @@ Réalisé entièrement à la main avec ❤️
 
 Website of the game serveur "Les Bannis"
 
-Languages used : HTML/CSS/PHP
+Languages used : HTML/CSS/JS/PHP
 
  - Architecture MVC
  - Using of a template 
