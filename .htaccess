@@ -1,0 +1,10 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^accueil.html$ /view/accueil.php [L]
+RewriteRule ^regles.html$ /view/regles.php [L]
+RewriteRule ^quetes.html$ /view/quetes.php [L]
+RewriteRule ^cite.html$ /view/cite.php [L]
+RewriteRule ^staff.html$ /view/staff.php [L]
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.lesbannis.fr/$1 [R,L]

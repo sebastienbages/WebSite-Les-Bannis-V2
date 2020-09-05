@@ -1,0 +1,39 @@
+@media all and (max-width: 1690px) {
+    body {
+        background-position: center;
+    }
+}
+@media all and (max-width: 780px) {
+    #main_title {
+        font-size: 3em;
+        text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 20px 0.5em #cc0000, 0px -20px 0.5em #cc0000, 30px 0px 0.5em #cc0000, -30px 0px 0.5em #cc0000;
+
+    }
+    h2 {
+        font-size: 2em;
+    }
+    p {
+        padding: 0 2%;
+    }
+}
+@media all and (max-width: 780px) {
+    #articles {
+        flex-direction: column;
+    }
+    
+}
+@media all and (max-width: 360px) {
+    #main_title {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    img, #logo_randgeur {
+        width: 150px;
+        height: auto;
+    }
+}

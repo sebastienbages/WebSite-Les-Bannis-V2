@@ -1,0 +1,19 @@
+#triangle {
+    width: 0px;
+    height: 0px;
+    margin: 0 auto;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #ffffff;
+    position: relative;
+    bottom: 50px;
+}
+@media all and (max-width: 480px) {
+    
+    #triangle {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 20px solid #ffffff;
+        bottom: 30px;
+    }
+}

@@ -1,0 +1,38 @@
+@media all and (max-width: 1690px) 
+{
+    body 
+    {
+        background-position: center;
+    }
+}
+@media all and (max-width: 1024px) 
+{
+    #return
+    {
+        position: initial;
+        top : initial;
+        left : initial;
+    }
+}
+@media all and (max-width: 780px)
+{
+    h1, #return
+    {
+        font-size: 1.5em;
+    }
+    p, #image
+    {
+        font-size: 1em;
+    }
+    #submit
+    {
+        font-size: 0.8em;
+    }
+}
+@media all and (max-width: 360px) 
+{
+    img {
+        width: 90%;
+        height: auto;
+    }
+}

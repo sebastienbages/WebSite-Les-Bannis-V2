@@ -1,0 +1,101 @@
+body {
+    font-family: "jockey_oneregular", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/body/bodyrules_2560.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.white {
+    color: #ffffff;
+}
+.rules, p {
+    font-size: 1.4em;
+}
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+.center {
+    text-align: center;
+}
+#main_title {
+    font-size: 4em;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 20px 0.5em #cc0000, 0px -20px 0.5em #cc0000, 30px 0px 0.5em #cc0000, -30px 0px 0.5em #cc0000;
+    margin: 0;
+}
+#title {
+    height: 100vh;
+    flex-direction: column;
+}
+#section_rules {
+    width: 100%;
+    padding-top: 2%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.margin_bottom {
+    margin-bottom: 5%;
+}
+h2 {
+    margin: 2% 0;
+    font-size: 2.2em;
+    text-shadow: 5px 5px 0.5em #cc0000, -5px -5px 0.5em #cc0000;
+}
+.rules_sign {
+    list-style-type: decimal;
+}
+.rules {
+    padding-left: 0;
+}
+span {
+    color: #cc0000;
+}
+.underline {
+    text-decoration: underline;
+}
+#gardien {
+    width: 200px;
+    height: auto;
+    margin-left: 40px;
+    margin-right: 2%;
+    box-shadow: 3px 3px 3px #000000;
+}
+#discord {
+    color: #357be6;
+    font-size: 1.6em;
+}
+li 
+{
+    list-style-type: none;
+    color: #ffffff;
+}
+#rules_respect
+{
+    padding-bottom: 2%;
+    flex-direction: column-reverse;
+}
+.guerrier
+{
+    color: #121aff;
+}
+.champion
+{
+    color: #0081ff;
+}
+.gardien
+{
+    color: #ff4200;
+}
+.main_gardien
+{
+    color: #ffff00;
+}
+.guerrier_bannis
+{
+    color: #4a0000;
+}
+.elu_bannis
+{
+    color: #ff0000;
+}

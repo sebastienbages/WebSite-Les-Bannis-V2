@@ -1,0 +1,5 @@
+AuthName "Veuillez entrer votre LOGIN et Mot de Passe"
+AuthType Basic
+AuthUserFile "/home/lesbannicj/www/admin/.htpasswd"
+Require valid-user
+

@@ -1,0 +1,87 @@
+body {
+    font-family: "jockey_oneregular", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bodyadmin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.white
+{
+    color: #ffffff;
+}
+#article
+{
+    margin-bottom: 2%;
+}
+#submit, #return_a
+{
+    font-size: 1em;
+}
+#submit, #titre
+{
+    margin: 2% 0;
+}
+label, p
+{
+    font-size: 1.5em;
+}
+.center
+{
+    text-align: center;
+}
+.uppercase
+{
+    text-transform: uppercase;
+}
+
+#post, #del
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+}
+.shadow-red
+{
+    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 10px 0.5em #cc0000, 0px -10px 0.5em #cc0000, 20px 0px 0.5em #cc0000, -20px 0px 0.5em #cc0000;
+}
+.shadow-green
+{
+    text-shadow: -1px 1px 0 #33cc33, 1px 1px 0 #33cc33, 1px -1px 0 #33cc33, -1px -1px 0 #33cc33, 0px 10px 0.5em #33cc33, 0px -10px 0.5em #33cc33, 20px 0px 0.5em #33cc33, -20px 0px 0.5em #33cc33;
+}
+#image
+{
+    font-style: italic;
+    font-size: 1.2em;
+}
+#return_a
+{
+    color: #cc0000;
+}
+img
+{
+    height: 200px;
+}
+.list_image
+{
+    text-align: center;
+    display: inline-block;
+    margin: 0 1%;
+}
+#list
+{
+    margin-bottom: 5%;
+}
+#file
+{
+    color: #cc0000;
+}
+#return
+{
+    position: fixed;
+    top : 2%;
+    left : 2%;
+}

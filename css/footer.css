@@ -1,0 +1,22 @@
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    text-align: center;
+    height: 6vh;
+    display: table;
+    width: 100%;
+}
+.footer {
+    font-size: 1.2em;
+}
+#admin
+{
+    text-decoration: none;
+    color: #cc0000;
+}
+.italic {
+    font-style: italic;
+}
+.no-margin {
+    margin: 0;
+}
