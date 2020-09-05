@@ -23,7 +23,7 @@ Réalisé entièrement à la main avec ❤️
 
 🇬🇧/🇺🇸
 
-Web site of the game serveur "Les Bannis"
+Website of the game serveur "Les Bannis"
 
 Languages used : HTML/CSS/PHP
 
