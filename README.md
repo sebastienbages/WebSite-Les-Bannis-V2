@@ -14,3 +14,5 @@ Languages utilisés : HTML/CSS/PHP
 
 Actuellement en ligne, vous pouvez le consulter à l'adresse suivante :
 https://www.lesbannis.fr
+
+Réalisé entièrement à la main avec ❤️
