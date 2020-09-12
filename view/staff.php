@@ -26,7 +26,6 @@ $css_responsive ='../css/staff_responsive.css';
     <h2 class="white shadow-red">Qui sommes nous ?</h2>
 
     <p>Bonjour et bienvenue sur notre site internet.</p>
-    <p>Nous sommes des trentenaires toulousains passionnés par l'informatique et le gaming.</p>
     <p>Après plusieurs mois de travail, notre serveur Conan Exiles est enfin prêt !</p>
     <p>Chaque objets, pierres, détails et quêtes que vous allez découvrir ont été imaginés et réalisés par nos soins.</p>
     <p>Nous espérons que vous prendrez du plaisir à découvrir la terre des bannis autant que nous avons eu à la réaliser.</p>

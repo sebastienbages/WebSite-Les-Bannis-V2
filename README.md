@@ -13,6 +13,7 @@ Languages utilisés : HTML/CSS/JS/PHP
       - Gestion des images sur le serveur
  - Utilisation d'une base de données MySql
  - Optimisation du SEO
+ - 100% Responsive
 
 Actuellement en ligne, vous pouvez le consulter à l'adresse suivante :
 https://www.lesbannis.fr
@@ -34,6 +35,7 @@ Languages used : HTML/CSS/JS/PHP
       - Pictures manager
  - Using of a SQL database
  - SEO optimisation
+ - 100% Responsive
 
 Online, you can visit the site at this address :
 https://www.lesbannis.fr

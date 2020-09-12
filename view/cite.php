@@ -74,7 +74,6 @@ $css_responsive ='../css/city_responsive.css';
 
         <div>
 
-            <img class="margin_bottom" src="../img/cite/autres/1.jpg" alt="la banque de la cité de sobek">
             <img class="margin_bottom" src="../img/cite/autres/2.jpg" alt="la salle du trésor de la cité de sobek">
 
         </div>
