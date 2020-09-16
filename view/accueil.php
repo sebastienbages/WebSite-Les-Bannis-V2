@@ -29,7 +29,7 @@ $css_responsive ='../css/accueil_responsive.css';
 
         <iframe src="https://discordapp.com/widget?id=590837864510783489&theme=dark"></iframe>
         <br>
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HWR8KYMBEAMNE&source=url" target="_blank" rel="nofollow"><img id="paypal" src="../img/don.png" alt="faire un don avec paypal"></a>
+        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HWR8KYMBEAMNE&source=url" target="_blank" rel="noopener noreferrer nofollow"><img id="paypal" src="../img/don.png" alt="faire un don avec paypal"></a>
         <p id="help" class="white no-margin shadow-red">Aidez-nous à maintenir le serveur</p>
         <br>
 
