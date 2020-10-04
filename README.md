@@ -40,14 +40,14 @@ https://www.lesbannis.fr
 
 🇬🇧/🇺🇸
 
-## A propos
+## About
 
 Showcase site for the French-speaking multiplayer PC platform server called "Les Bannis". This server is based on the video game "Conan Exiles" developed by Funcom. It allows a web presence and visibility for players looking for a community in this universe.
 
 
 This personal project served as a support to learn on my own the basic languages ​​of web development and a first database format. I also discovered key concepts of programming and improved my SEO skills (the site is placed in 12th position on average on the Google search engine on more than 2M results according to the keywords "FR Conan Exiles server ").
 
-### Détails
+### Details
 
 - Architecture MVC
 
