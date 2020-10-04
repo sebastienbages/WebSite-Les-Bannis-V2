@@ -31,6 +31,7 @@ Ce projet personnel m'a servi de support afin d'apprendre en autodidacte les lan
 Actuellement en ligne, vous pouvez le consulter à l'adresse suivante :
 
 <img src="https://img.shields.io/badge/Host-OVH-22a1eb" alt="host OVH"> <img src="https://img.shields.io/badge/Website-up-green.svg" alt="host OVH">
+
 https://www.lesbannis.fr  
 
 ![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)
@@ -67,6 +68,7 @@ This personal project served as a support to learn on my own the basic languages
 Online, you can visit the site at this address :
 
 <img src="https://img.shields.io/badge/Host-OVH-22a1eb" alt="host OVH"> <img src="https://img.shields.io/badge/Website-up-green.svg" alt="host OVH">
+
 https://www.lesbannis.fr
 
 ![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)
