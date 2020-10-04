@@ -16,7 +16,7 @@ Ce projet personnel m'a servi de support afin d'apprendre en autodidacte les lan
 
 - Utilisation d'un template
 
-- Espace d'administration :
+- Espace d'administration sécurisé :
 
   - Ajout d'articles
 
@@ -53,7 +53,7 @@ This personal project served as a support to learn on my own the basic languages
 
 - Using of a template
 
-- Administration interface :
+- Administration interface secured :
 
   - Add articles
 
