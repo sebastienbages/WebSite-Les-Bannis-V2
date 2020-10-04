@@ -1,4 +1,4 @@
-# LES BANNIS
+# Site Web "LES BANNIS"
 
 <img src="https://img.shields.io/badge/Uses-HTML-e44c21" alt="made with html"> <img src="https://img.shields.io/badge/Uses-CSS-274ee4" alt="uses css"> <img src="https://img.shields.io/badge/Uses-JS-efd81e" alt="uses javascript"> <img src="https://img.shields.io/badge/Uses-PHP-7476ad" alt="uses php"> <img src="https://img.shields.io/badge/Uses-Git-red.svg" alt="uses git"> <img src="https://img.shields.io/badge/Uses-VS Code-22a1eb" alt="uses vscode">
  
