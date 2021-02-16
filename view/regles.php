@@ -33,11 +33,14 @@ $css_responsive ='../css/rules_responsive.css';
             <li>XP récolte, kill et craft <span>X2</span></li>
             <li>PVP : <span>voir règles complètes sur le discord</span></li>
             <li>La <span>destruction des bâtiments</span> par les joueurs est <span>désactivée</span></li>
-            <li>Les <span>purges</span> sont <span>activées</span> pour 1 joueur connecté minimum (niveau 6)</li>
+            <li>Les <span>purges</span> sont <span>activées</span> pour 1 joueur connecté minimum (niveau 4)</li>
             <li>Les paillasses sont autorisées comme point de sauvegarde. Les lits sont interdits hors base</li>
+            <li>Cycles du lever/jour/coucher/nuit <span>augmentés</span> raisonnablement pour plus de réalisme</li>
+            <li>Faim et Soif <span>légèrement diminuées</span> </li>
             <li>Le <span>vol</span> est <span>désactivé</span></li>
             <li>Le <span>teamkill</span> est <span>désactivé</span></li>
             <li>Des <span>portails</span> sont présents à proximité de chaque <span>obélisques</span></li>
+            <li>6 joueurs <span>maxi</span> par clan</li>
         </ul>
 
     </article>
@@ -53,36 +56,26 @@ $css_responsive ='../css/rules_responsive.css';
             <li>Les <span>remparts</span> ou <span>structures quelconques</span> en <span>fondations</span> uniquement sont <span>interdits</span></li>
             <li>Par joueur solo ou clan, il est autorisé <span>un base principale, un avant-poste et une cabane de pêche</span></li>
             <li>La dégradation des bâtiments est <span>désactivée</span></li>
-        </ul>
-
-        <ul class="rules">
-            <li class="underline">Installation obligatoire d'un panneau à l'entrée de vos bases/avant-poste/cabane de pêche contenant les mentions suivantes :</li>
-        </ul>
-
-        <ul class="rules_sign rules">
-            <li>Base principale - date dernière connexion</li>
-            <li>Avant-poste - date dernière connexion</li>
-            <li>Cabane de pêche - date dernière connexion</li>
-        </ul>
-
-        <ul class="rules">
             <li>Les matériaux de construction doivent être en <span>accord avec le paysage</span></li>
             <li>Interdiction de construire sur des <span>lieux nommées</span> et de <span>bloquer l'accès</span> aux donjons, ressources rares et passages stratégiques</li>
-            <li>Un seul temple est autorisé par base principale/clan</li>
-            <li>Une seule roue de la souffrance est autorisée <span>de taille au choix</span> par base principale/clan</li>
-            <li>Une seule roue de la souffrance est autorisée <span>de taille petite</span> ou <span>moyenne</span> par avant-poste</li>
+            <li>Interdiction de construire dans le <span>Volcan</span></li>
+            <li>Interdiction de construire dans la zone d'influence des <span>world boss</span></li>
+            <li>Une seule roue de la souffrance <span>de chaque type</span> par base principale/clan</li>
+            <li><span>LES AVANTS POSTE SONT INTERDITS</span> ainsi que les roues de la souffrance à côté de camp de pnj, vous avez tous la possibilité d'avoir le "/home" pour ramener les pnjs à votre base !</li>
         </ul>
 
     </article>
     
     <article class="margin_bottom">
         
-        <h2 class="white">Thralls & animaux</h2>
+        <h2 class="white">Thralls & animaux (par joueur)</h2>
 
         <ul class="rules">
             <li>10 thralls combattants <span>maximum</span></li>
-            <li>10 animaux maximum</li>
+            <li>5 animaux maximum</li>
             <li>La <span>faim</span> est <span>désactivée</span></li>
+            <li>1 suivants autorisé en plus de la monture</li>
+            <li>Suivants <span>immunisés</span> à la lave</li>
             <li>Ils doivent se situer <span>dans vos bases</span> ou <span>à proximité</span> uniquement</li>
         </ul>
 
@@ -95,7 +88,9 @@ $css_responsive ='../css/rules_responsive.css';
         <ul class="rules">
             <li>Des <span>marchands</span> sont présents à Sobek et divers lieux...</li>
             <li>Vous avez la possibilité de placer un marchand à Sobek pour vendre vos objets</li>
-            <li><span>Une pièce d’or</span> est distribuée toutes les <span>24h</span> à tous les <span>joueurs connectés et offline</span></li>
+            <li>Votre <span>emplacement</span> de commerce est valide 7 jours</li>
+            <li> Vous <span>perdez</span> 10% de votre wallet si vous mourrez (suicide compris). Vous devez <span>acheter un banquier</span> au comptoir du commerce pour stocker votre argent.</li>
+            <li><span>30 pièces d’argent</span> sont distribuées toutes les <span>24h</span> à tous les <span>joueurs connectés et offline</span></li>
         </ul>
 
     </article>
@@ -106,15 +101,9 @@ $css_responsive ='../css/rules_responsive.css';
 
         <ul class="rules">
             <li>Plusieurs <span>Rangs</span> existent sur ces terres</li>
-            <li>Vous démarrez l’aventure avec le rang <span class="grey">Exilé</span></li>
-            <li>La progression est possible via des quêtes, elles sont accessibles avec les <span>PNJ nommés</span></li>
-            <li><span class="guerrier">Guerrier</span></li>
-            <li><span class="champion">Champion</span></li>
-            <li><span class="gardien">Gardien</span></li>
-            <li><span class="main_gardien">Main des Gardiens</span></li>
-            <li><span class="guerrier_bannis">Guerrier Bannis</span></li>
-            <li><span class="elu_bannis">Elu des Bannis</span></li>
-            <li>Les rangs vous permettront d’accéder à des lieux, marchands, quêtes supplémentaires et fonctionnalités…</li>
+            <li>Vous démarrez l’aventure avec le rang <span class="grey">Bannis</span></li>
+            <li>La progression est possible via des quêtes, elles sont accessibles avec les <span>PNJ équipés d'un logo</span></li>
+            <li>Les rangs vous permettront d’accéder à des lieux, marchands, quêtes supplémentaires, world boss et plein d'autres fonctionnalités…</li>
         </ul>
 
     </article>
