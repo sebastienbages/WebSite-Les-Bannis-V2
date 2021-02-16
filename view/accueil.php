@@ -16,8 +16,9 @@ $css_responsive ='../css/accueil_responsive.css';
 <div id="title" class="flex">
             
     <h1 id="main_title" class="center white no-margin">les bannis</h1>
-    <p class="subtitle center white no-margin">@IP : 176.57.140.150:28900</p>
+    <p class="subtitle center white no-margin">@IP : 135.125.97.168:28000</p>
     <p class="size center white no-margin">Notre serveur est ouvert depuis le 23 Avril 2020</p>
+    <p class="size center white no-margin">Dernier Wipe effectué le 01 Février 2021</p>
 
 </div>
 
