@@ -9,16 +9,26 @@ $css = '../css/accueil.css';
 //CSS RESPONSIVE DE LA PAGE
 $css_responsive ='../css/accueil_responsive.css';
 
+//CONNEXION BDD
+require('../fonctions/db_connect.php');
+$bdd = db_connect();
+
+//REQUETE
+require('../fonctions/requests.php');
+$request_ip = request_rules_ip($bdd);
+$request_port = request_rules_port($bdd);
+$ip = $request_ip->fetch(PDO::FETCH_ASSOC);
+$port = $request_port->fetch(PDO::FETCH_ASSOC);
+
 ?>
 
 <?php ob_start(); ?>
 
 <div id="title" class="flex">
             
-    <h1 id="main_title" class="center white no-margin">les bannis</h1>
-    <p class="subtitle center white no-margin">@IP : 135.125.97.168:28000</p>
-    <p class="size center white no-margin">Notre serveur est ouvert depuis le 23 Avril 2020</p>
-    <p class="size center white no-margin">Dernier Wipe effectué le 01 Février 2021</p>
+    <h1 id="main_title" class="center white no-margin hyborian">les bannis</h1>
+    <p class="subtitle center white no-margin">@IP : <?= $ip['value'] ?>:<?= $port['value'] ?></p>
+    <p class="size center white no-margin">Serveur français Conan Exiles</p>
 
 </div>
 
@@ -28,6 +38,7 @@ $css_responsive ='../css/accueil_responsive.css';
 
     <aside id="aside_left" class="center">
 
+        <h2 class="center shadow-red white">Rejoignez-nous sur discord</h2>
         <iframe src="https://discordapp.com/widget?id=590837864510783489&theme=dark"></iframe>
         <br>
         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HWR8KYMBEAMNE&source=url" target="_blank" rel="noopener noreferrer nofollow"><img id="paypal" src="../img/don.png" alt="faire un don avec paypal"></a>
@@ -74,18 +85,6 @@ $css_responsive ='../css/accueil_responsive.css';
             <p class="bold">Nous accueillons les joueurs de tous horizons et expérience.</p>
 
         </article>
-
-        <article class="white">
-
-            <h2 class="center shadow-red">L'histoire</h2>
-
-            <p>Vous êtes éxilé sur la terre des <em>bannis</em> et vous devez survivre dans cet univers hostile. Dès votre réveil, vous ferez la connaissance de l'ordre <em>des "Gardiens"</em>. Cette ordre dirigée par <em>"Belor"</em>, le gardien suprême, a pour mission d'accueillir les nouveaux exilés, de préserver l'équilibre de cette terre et de faire régner l'ordre. En avancant, vous trouverez facilement de l'aide dans les dunes de sable. Si vous arrivez à survivre, vous découvrirez <em>"Sobek"</em> <em>cité</em> de la terre des bannis. Ville marchande et lieu de rencontres, elle possède une <em>"arène"</em> où chaque aventurier peut prouver sa valeur...</p>
-
-            <p>Au fil de vos aventures et de votre exploration, vous découvrez qu'une rebellion s'organise contre l'autorité des Gardiens... Vous découvrirez les évènements anciens survenues sur cette Terre et ferai la connaissance d'un chef de guerre... Tôt ou tard, il vous faudra choisir entre deux camps et affronter vos ennemis...</p>
-
-            <p><em>Survivez</em>, <em>construisez</em>, <em>explorez</em>, <em>combattez</em>, obtenez de nouveaux rangs dans l'échelle sociale et devenez le nouveau héros de la terre des bannis.</p>
-
-        </article>  
 
     </section>
 

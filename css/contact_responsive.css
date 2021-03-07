@@ -7,7 +7,6 @@
     #main_title {
         font-size: 3em;
         text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 20px 0.5em #cc0000, 0px -20px 0.5em #cc0000, 30px 0px 0.5em #cc0000, -30px 0px 0.5em #cc0000;
-
     }
     h2 {
         font-size: 2em;
@@ -22,6 +21,12 @@
     }
     
 }
+@media all and (max-width: 768px) {
+    form {
+        padding: 0 0.5em;
+    }
+    
+}
 @media all and (max-width: 360px) {
     #main_title {
         font-size: 2.5em;
@@ -32,7 +37,7 @@
     p {
         font-size: 1.2em;
     }
-    img, #logo_randgeur {
+    .logo, #logo_randgeur {
         width: 150px;
         height: auto;
     }

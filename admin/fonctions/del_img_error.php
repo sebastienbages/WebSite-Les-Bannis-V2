@@ -5,12 +5,12 @@
     {
         if ($_GET['del'] == 1)
         {
-            echo '<p class="center white shadow-green">Suppression effectuée avec succés !';
+            echo '<p class="center white shadow-green message">Suppression effectuée avec succés !';
         }
 
         if ($_GET['del'] == 2)
         {
-            echo '<p class="center white shadow-red">Erreur de suppression ou fichier inexistant !';
+            echo '<p class="center white shadow-red message">Erreur de suppression ou fichier inexistant !';
         }
     }
 

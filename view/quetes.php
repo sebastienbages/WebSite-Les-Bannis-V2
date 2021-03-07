@@ -14,7 +14,7 @@ require("../fonctions/db_connect.php");
 $bdd = db_connect();
 
 //REQUETE BDD
-require("../fonctions/request_quest.php");
+require("../fonctions/requests.php");
 $ajout = request_quest($bdd);
 
 ?>
@@ -23,7 +23,7 @@ $ajout = request_quest($bdd);
 
 <div id="title">
 
-<h1 id="main_title" class="center white">quêtes</h1>
+<h1 id="main_title" class="center white hyborian">quêtes</h1>
 
 </div>
 
@@ -35,17 +35,51 @@ $ajout = request_quest($bdd);
 
     while ($donnees = $ajout->fetch())
     {
-    echo 	'<article class="center">
-                <h2 class="white">' . $donnees['titre'] . '</h2>
-                <p class="white">' . $donnees['article'] . '</p>
-                <img src="' . $donnees['image'] . '">
-        
-            </article>';
+        if ($donnees['titre'] != null && $donnees['article'] != null && $donnees['image'] != null) {
+            echo 	'<article class="center">
+                        <h2 class="white">' . $donnees['titre'] . '</h2>
+                        <p class="white">' . $donnees['article'] . '</p>
+                        <img class="img-quest" src="' . $donnees['image'] . '">
+                    </article>';
+        }
+        elseif ($donnees['titre'] != null && $donnees['article'] == null && $donnees['image'] == null) {
+            echo 	'<article class="center">
+                        <h2 class="white">' . $donnees['titre'] . '</h2>
+                    </article>';
+        }
+        elseif ($donnees['titre'] != null && $donnees['article'] != null && $donnees['image'] == null) {
+            echo 	'<article class="center">
+                        <h2 class="white">' . $donnees['titre'] . '</h2>
+                        <p class="white">' . $donnees['article'] . '</p>
+                    </article>';
+        }
+        elseif ($donnees['titre'] != null && $donnees['article'] == null && $donnees['image'] != null) {
+            echo 	'<article class="center">
+                        <h2 class="white">' . $donnees['titre'] . '</h2>
+                        <img class="img-quest" src="' . $donnees['image'] . '">
+                    </article>';
+        }
+        elseif ($donnees['titre'] == null && $donnees['article'] != null && $donnees['image'] == null) {
+            echo 	'<article class="center">
+                        <p class="white">' . $donnees['article'] . '</p>
+                    </article>';
+        }
+        elseif ($donnees['titre'] == null && $donnees['article'] != null && $donnees['image'] != null) {
+            echo 	'<article class="center">
+                        <p class="white">' . $donnees['article'] . '</p>
+                        <img class="img-quest" src="' . $donnees['image'] . '">
+                    </article>';
+        }
+        elseif ($donnees['titre'] == null && $donnees['article'] == null && $donnees['image'] != null) {
+            echo 	'<article class="center">
+                        <img class="img-quest" src="' . $donnees['image'] . '">
+                    </article>';
+        }
     }
 
 ?>
 
-<h2 id="h2_end" class="center white">Et bien d'autres...</h2>
+<h2 id="h2_end" class="center white">Et plein d'autres...</h2>
 
 </section>
 

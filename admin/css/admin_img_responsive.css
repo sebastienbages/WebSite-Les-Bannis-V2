@@ -12,6 +12,7 @@
         position: initial;
         top : initial;
         left : initial;
+        margin-bottom: 1em;
     }
 }
 @media all and (max-width: 780px)

@@ -24,67 +24,41 @@ $path = glob($dir . '/*');
 
     <form action="../fonctions/post_img.php" method="post" enctype="multipart/form-data" class="center">
         <input type="file" name="image" id="file"><br>
-        <label for="image" id="image" class="white">(.jpg, .jpeg ou .png uniquement, inférieur à 300Ko et de résolution 768x432)</label><br>
-        <input type="submit" value="ENVOYER" id="submit">
+        <label for="image" id="image" class="white">(.jpg, .jpeg ou .png uniquement et 5Mo max)</label><br>
+        <input type="submit" value="ENVOYER" id="submit" class="btn btn-danger">
     </form>
 
     <?php require('../fonctions/add_img_error.php'); ?>
 
 </div>
 
-<div id="del">
-
-    <h1 class="white center uppercase shadow-red">Supprimer une image</h1>
-
-    <form action="../fonctions/del_img.php" method="post" class="center">
-        <select name="del">
-
-            <?php
-
-                foreach ($path as $value)
-                {
-                    //Récupère que le nom du fichier uniquement et l'extension
-                    $file = pathinfo($value);
-                    $file = $file['basename'];
-
-                    echo '<option value="' . $value . '">' . $file . '</option>';
-                }
-
-            ?>
-
-        </select><br>
-
-        <input type="submit" value="SUPPRIMER" id="submit">
-
-    </form>
-
-    <?php require('../fonctions/del_img_error.php'); ?>
-
-</div>
-
-<hr width="100%">
-
 <div id="gestion">
+
+    <h1 id="list" class="white center uppercase shadow-red">Liste des images</h1>
 
     <?php
         
-        echo '<h1 id="list" class="white center uppercase shadow-red">Liste des fichiers dans le repertoire "'.$dir.'/"</h1>';
-
         foreach ($path as $value)
         {
             //Récupère que le nom du fichier uniquement et l'extension
             $file = pathinfo($value);
             $file = $file['basename'];
 
-            echo    '<div class="list_image">
+            echo    '<div class="list_image mb-2">
                         <img src="' . $value . '">
                         <p class="center white">' . $file . '</p>
+                        <form action="#" method="post" class="3">
+                            <input type="text" name="del" class="hidden" value="' . $value . '" required>
+                            <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-del-image">
+                        </form>
                     </div>';
         }
     
     ?>
 
 </div>
+
+<script src="../js/del-image.js"></script>
 
 <?php $content = ob_get_clean(); ?>
 

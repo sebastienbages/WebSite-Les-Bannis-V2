@@ -1,7 +1,4 @@
 body {
-    font-family: "jockey_oneregular", Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
     background-image: url(../img/bodyadmin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,15 +6,15 @@ body {
 }
 .white
 {
-    color: #ffffff;
+    color: #ffffff !important;
 }
 #submit, select, #return_a
 {
-    font-size: 1em;
+    font-size: 1em !important;
 }
-label, p
+label, p, table
 {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
 }
 .center
 {
@@ -72,4 +69,11 @@ p
     position: fixed;
     top : 2%;
     left : 2%;
+}
+.hidden {
+    visibility: hidden;
+    position: absolute;
+}
+.display-none {
+    display: none;
 }

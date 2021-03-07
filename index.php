@@ -18,8 +18,8 @@
                 header('Location: regles.html');
                 break;
             //PAGE STAFF
-            case 'staff':
-                header('Location: staff.html');
+            case 'contact':
+                header('Location: contact.html');
                 break;
         }
     }

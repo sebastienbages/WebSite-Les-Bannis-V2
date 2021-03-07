@@ -20,7 +20,7 @@ body {
 }
 #title {
     display: flex;
-    height: 100vh;
+    height: 92vh;
     justify-content: center;
     flex-direction: column;
 }
@@ -42,10 +42,11 @@ em {
     text-shadow: 5px 5px 0.5em #cc0000, -5px -5px 0.5em #cc0000;
     font-style: normal;
 }
-img {
+.img-quest {
     border-radius: 10px;
-    box-shadow: 3px 3px 3px black;
+    /* box-shadow: 3px 3px 3px black; */
     margin: 0 1%;
+    max-width: 768px;
 }
 #h2_end
 {

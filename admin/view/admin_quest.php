@@ -13,13 +13,13 @@ $dir= '../../img/quest';
 $path = glob($dir . '/*');
 
 //MESSAGES D'ERREUR
-require('../fonctions/msg_quest_error.php');
+require('../fonctions/msg_error.php');
 
 //CONNEXION BDD
 require('../../fonctions/db_connect.php');
 $bdd = db_connect();
 //REQUETE
-require('../../fonctions/request_quest.php');
+require('../../fonctions/requests.php');
 $request_id = request_quest($bdd);
 $request_quest = request_quest($bdd);
 
@@ -27,35 +27,25 @@ $request_quest = request_quest($bdd);
 
 <?php ob_start(); ?>
 
-<p id="return" class="uppercase"><a href="../index_admin.php" id="return_a" class="red">Retour vers accueil admin</a></p>
+<p id="return" class="uppercase"><a href="../index_admin.php" class="red">Retour vers accueil admin</a></p>
 
 <div id="content" class="center">
 
-    <h1 class="white center uppercase">ajout d'une nouvelle quête</h1>
+    <h1 class="white center uppercase my-5">ajout d'une nouvelle quête</h1>
 
     <form action="../fonctions/post_quest.php" method="post" class="center">
 
         <label for="titre" class="white">Titre de l'article</label>
-
         <br>
-
         <input type="text" name="titre" id="titre">
-
         <br>
-
         <label for="article" class="white">Texte</label>
-
         <br>
-
         <textarea name="article" cols="30" rows="20" id="article"></textarea>
-
         <br>
-
         <label for="img" class="white">Image à associer</label>
-
         <br>
-
-        <select name="img" id="image" required>
+        <select name="img" id="image" class="mb-3">
 
             <?php
 
@@ -75,70 +65,17 @@ $request_quest = request_quest($bdd);
         </select>
 
         <br>
-
-        <p><em><a href="admin_img.php" class="red">Gestion des images</a></em></p>
-
+        <img src="" alt="" id="image-selected" class="w-25">
         <br>
-
-        <label for="auteur" class="white">Auteur</label>
-
-        <br>
-
-        <select name="auteur" id="auteur" required>
-
-            <option value="Randgeur">Randgeur</option>
-            <option value="McFreely">McFreely</option>
-
-        </select>
-
-        <br>
-
-        <input type="submit" value="ENVOYER" id="submit">
-
+        <input type="submit" value="ENREGISTRER" id="submit" class="btn btn-danger">
     </form>
 
     <?php 
 
-    if (isset($_GET['msg'])) 
-    {
-        msg_add_quest($_GET['msg']);
-    }
-    
-    ?>
-
-    <h1 class="white center uppercase">suppression d'une quête</h1>
-
-    <form action="../fonctions/del_quest.php" method="post" class="center">
-
-        <label for="id" class="white">ID de la Quête</label>
-
-        <br>
-
-        <select name="id" id="id">
-
-        <?php
-        
-        while ($id = $request_id->fetch())
+        if (isset($_GET['msg'])) 
         {
-            echo('<option value="' . $id['id'] . '">' . $id['id'] . '</option>');
+            msg_add_quest($_GET['msg']);
         }
-    
-        ?>
-
-        </select>
-
-        <br>
-
-        <input type="submit" value="SUPPRIMER" id="submit">
-
-    </form>
-
-    <?php 
-
-    if (isset($_GET['msg'])) 
-    {
-        msg_del_quest($_GET['msg']);
-    }
     
     ?>
 
@@ -148,26 +85,67 @@ $request_quest = request_quest($bdd);
 
     <h1 class="white center uppercase">Liste des quêtes enregistrées</h1>
 
-    <hr width="100%">
+    <?php 
 
-    <?php
-        
-        while ($quest = $request_quest->fetch())
+        if (isset($_GET['msg'])) 
         {
-            echo '<article>
-                    <h2 class="shadow-red white center">' . $quest['titre'] . '</h2>
-                    <p class="shadow-red">ID = ' . $quest['id'] . '</p>
-                    <p>' . $quest['article'] . '</p>
-                    <p>Date d\'ajout : ' . $quest['date_ajout'] . '</p>
-                    <p>Auteur : ' . $quest['auteur'] . '</p>
-                    <p>' . $quest['image'] . '</p>
-                    <hr width="100%">
-                </article>';
+            msg_del_quest($_GET['msg']);
         }
     
     ?>
 
+    <div class="table-responsive">
+        <table class="white table table-bordered text-center w-75 mx-auto">
+            <thead class="shadow-red">
+                <tr>
+                    <th class="align-middle">Position</th>
+                    <th class="align-middle">Date de publication</th>
+                    <th class="align-middle">Titre</th>
+                    <th class="align-middle">Texte</th>
+                    <th class="align-middle">Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <?php
+                        while ($quest = $request_quest->fetch())
+                        {
+
+                            if ($quest['image'] != null) {
+                                echo '<tr>
+                                        <td class="center align-middle">'. $quest['id'] .'
+                                            <form action="../fonctions/del_quest.php" method="post" class="3">
+                                                <input type="text" name="id" class="hidden" value="' . $quest['id'] . '" required>
+                                                <input type="submit" value="Supprimer" class="btn btn-outline-danger">
+                                            </form>
+                                        </td>
+                                        <td class="center align-middle">' . $quest['date_ajout'] . '</td>
+                                        <td class="center align-middle">' . $quest['titre'] . '</td>
+                                        <td class="center align-middle">' . $quest['article'] . '</td>
+                                        <td class="center align-middle"><img src="../' . $quest['image'] . '" class="w-50" /></td>
+                                    </tr>';
+                            }
+                            else {
+                                echo '<tr>
+                                        <td class="center align-middle">'. $quest['id'] .'
+                                            <form action="../fonctions/del_quest.php" method="post" class="3">
+                                                <input type="text" name="id" class="hidden" value="' . $quest['id'] . '" required>
+                                                <input type="submit" value="Supprimer" class="btn btn-outline-danger">
+                                            </form>
+                                        </td>
+                                        <td class="center align-middle">' . $quest['date_ajout'] . '</td>
+                                        <td class="center align-middle">' . $quest['titre'] . '</td>
+                                        <td class="center align-middle">' . $quest['article'] . '</td>
+                                        <td class="center align-middle"></td>
+                                    </tr>';
+                            }
+                        }
+                    ?>
+            </tbody>
+        </table>
+    </div>
 </div>
+
+<script src="../js/image.js"></script>
 
 <?php $content = ob_get_clean(); ?>
 

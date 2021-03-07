@@ -13,12 +13,16 @@
             case 'quetes_admin':
                 header('Location: view/admin_quest.php');
                 break;
+            //PAGE REGLES
+            case 'rules_admin':
+                header('Location: view/admin_rules.php');
+                break;
         }
     }
     else
     {
         //ENVOI VERS LA PAGE D'ACCUEIL
-        header('Location: view/accueil_admin.php');
+        header('Location: view/admin_accueil.php');
     }
 
 ?>

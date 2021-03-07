@@ -1,17 +1,8 @@
 body {
-    font-family: "jockey_oneregular", Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
     background-image: url(../img/bodyadmin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-#content
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 .white
 {
@@ -21,35 +12,56 @@ body {
 {
     text-align: center;
 }
-#main_title
+.port {
+    width: 3em;
+}
+.submit {
+    display: block !important;
+}
+.shadow-red
 {
-    font-size: 3em;
-    text-transform: uppercase;
-    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 20px 0.5em #cc0000, 0px -20px 0.5em #cc0000, 30px 0px 0.5em #cc0000, -30px 0px 0.5em #cc0000;
-    margin: 0;
+    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 10px 0.5em #cc0000, 0px -10px 0.5em #cc0000, 10px 0px 0.5em #cc0000, -10px 0px 0.5em #cc0000;
+}
+.shadow-green
+{
+    text-shadow: -1px 1px 0 #33cc33, 1px 1px 0 #33cc33, 1px -1px 0 #33cc33, -1px -1px 0 #33cc33, 0px 10px 0.5em #33cc33, 0px -10px 0.5em #33cc33, 20px 0px 0.5em #33cc33, -20px 0px 0.5em #33cc33;
+}
+.red
+{
+    color: #cc0000;
 }
 #content
 {
-    background-color: rgba(0, 0, 0, 0.2);
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#main_title
+{
+    font-size: 3em !important;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 20px 0.5em #cc0000, 0px -20px 0.5em #cc0000, 30px 0px 0.5em #cc0000, -30px 0px 0.5em #cc0000;
+    margin: 2% 0;
+}
+#exit_admin
+{
+    font-size: 2em !important;
 }
 ul 
 {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
 }
 li
 {
+    font-size: 2em !important;
     list-style-type: none;
-    font-size: 2em;
     margin: 0;
 }
-a
-{
-    color: #cc0000;
+input, label, p {
+    font-size: 1.5em !important;
 }
-#exit_admin
-{
-    font-size: 2em;
+form, #submit {
+    margin: 1em auto;
 }

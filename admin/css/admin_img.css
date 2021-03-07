@@ -1,7 +1,4 @@
 body {
-    font-family: "jockey_oneregular", Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
     background-image: url(../img/bodyadmin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +15,7 @@ body {
 }
 #submit, #return_a
 {
-    font-size: 1em;
+    font-size: 1em !important;
 }
 #submit, #titre
 {
@@ -26,7 +23,7 @@ body {
 }
 label, p
 {
-    font-size: 1.5em;
+    font-size: 1.5em !important;
 }
 .center
 {
@@ -71,10 +68,6 @@ img
     display: inline-block;
     margin: 0 1%;
 }
-#list
-{
-    margin-bottom: 5%;
-}
 #file
 {
     color: #cc0000;
@@ -84,4 +77,11 @@ img
     position: fixed;
     top : 2%;
     left : 2%;
+}
+.message {
+    margin: 0;
+}
+.hidden {
+    visibility: hidden;
+    position: absolute;
 }

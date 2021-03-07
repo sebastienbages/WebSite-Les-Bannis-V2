@@ -20,7 +20,7 @@ body {
 }
 #title {
     display: flex;
-    height: 100vh;
+    height: 92vh;
     justify-content: center;
     flex-direction: column;
 }
@@ -35,9 +35,10 @@ h2 {
 article {
     padding-top: 1%;
 }
-img {
+.img-city {
     border-radius: 10px;
-    box-shadow: 3px 3px 3px black;
+    /* box-shadow: 3px 3px 3px black; */
+    max-width: 768px;
 }
 p {
     font-size: 1.5em;

@@ -1,0 +1,67 @@
+body {
+    background-image: url(../img/bodyadmin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.white
+{
+    color: #ffffff;
+}
+.center
+{
+    text-align: center;
+}
+.uppercase
+{
+    text-transform: uppercase;
+}
+.red
+{
+    color: #cc0000;
+}
+.hidden {
+    visibility: hidden;
+    position: absolute;
+}
+.input-rule {
+    width: 50%;
+    text-align: center;
+}
+.input-submit, .input-rule, p {
+    font-size: 1.5em;
+}
+.input-submit:hover {
+    cursor: pointer;
+}
+.rule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block-rules {
+    margin-bottom: 5em;
+}
+.shadow-red
+{
+    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 10px 0.5em #cc0000, 0px -10px 0.5em #cc0000, 10px 0px 0.5em #cc0000, -10px 0px 0.5em #cc0000;
+}
+.msg-error {
+    margin-bottom: 2em;
+}
+#return
+{
+    position: fixed;
+    top : 2%;
+    left : 2%;
+}
+#content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+p
+{
+    margin: 0 !important;
+}

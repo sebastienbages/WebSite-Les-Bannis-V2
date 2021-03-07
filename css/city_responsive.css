@@ -6,7 +6,7 @@
 }
 @media all and (max-width: 1024px) {
 
-    img {
+    .img-city {
         width: 95%;
     }
 }

@@ -15,7 +15,7 @@ $css_responsive ='../css/city_responsive.css';
 
 <div id="title">
 
-    <h1 id="main_title" class="white center">sobek</h1>
+    <h1 id="main_title" class="white center hyborian">sobek</h1>
     
 </div>
 
@@ -29,8 +29,7 @@ $css_responsive ='../css/city_responsive.css';
 
         <div>
 
-            <img class="margin_bottom" src="../img/cite/taverne/1.jpg" alt="photo 1 taverne de la cité de sobek">
-            <img src="../img/cite/taverne/2.jpg" alt="photo 2 taverne de la cité de sobek">
+            <img class="margin_bottom img-city" src="../img/cite/taverne/1.jpg" alt="photo 1 taverne de la cité de sobek">
 
         </div>
 
@@ -44,8 +43,7 @@ $css_responsive ='../css/city_responsive.css';
 
         <div>
 
-            <img class="margin_bottom" src="../img/cite/fosse/1.jpg" alt="photo 1 fosse de la cité de sobek">
-            <img src="../img/cite/fosse/2.jpg" alt="photo 2 fosse de la cité de sobek">
+            <img class="margin_bottom img-city" src="../img/cite/fosse/1.jpg" alt="photo 1 de l'arêne de la cité de sobek">
 
         </div>
 
@@ -59,8 +57,9 @@ $css_responsive ='../css/city_responsive.css';
 
         <div>
 
-            <img class="margin_bottom" src="../img/cite/marche/1.jpg" alt="photo 1 le marché de la cité de sobek">
-            <img src="../img/cite/marche/2.jpg" alt="photo 2 le marché de la cité de sobek">
+            <img class="margin_bottom img-city" src="../img/cite/marche/1.jpg" alt="photo 1 le marché de la cité de sobek">
+            <br>
+            <img class="img-city" src="../img/cite/marche/2.jpg" alt="photo 2 le marché de la cité de sobek">
 
         </div>
 
@@ -74,7 +73,7 @@ $css_responsive ='../css/city_responsive.css';
 
         <div>
 
-            <img class="margin_bottom" src="../img/cite/autres/2.jpg" alt="la salle du trésor de la cité de sobek">
+            <img class="margin_bottom img-city" src="../img/cite/autres/1.jpg" alt="Un lieu étrange de la cité de sobek">
 
         </div>
 
