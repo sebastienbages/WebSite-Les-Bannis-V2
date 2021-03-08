@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : lun. 08 mars 2021 à 22:18
+-- Généré le : lun. 08 mars 2021 à 22:57
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -94,10 +94,10 @@ INSERT INTO `construction` (`id`, `rule`) VALUES
 (6, 'La dégradation des bâtiments est désactivée'),
 (7, 'Les matériaux de construction doivent être en accord avec le paysage'),
 (8, 'Interdiction de construire sur des lieux nommées et de bloquer l\'accès aux donjons, ressources rares et passages stratégiques'),
-(9, 'Interdiction de construire dans le Volcan'),
-(10, 'Interdiction de construire dans la zone d\'influence des world boss'),
-(11, 'Une seule roue de la souffrance de chaque type par base principale/clan'),
-(12, 'LES AVANTS POSTE SONT INTERDITS ainsi que les roues de la souffrance à côté de camp de pnj, vous avez tous la possibilité d\'avoir le \"/home\" pour ramener les pnjs à votre base !');
+(11, 'Interdiction de construire dans la zone d\'influence des world boss et de construire dans les donjons ou autour des boss'),
+(9, 'Une seule roue de la souffrance de chaque type par base principale/clan'),
+(10, 'LES AVANTS POSTE SONT INTERDITS ainsi que les roues de la souffrance à côté de camp de pnj, vous avez tous la possibilité d\'avoir le \"/home\" pour ramener les pnjs à votre base !'),
+(12, 'Interdiction de construire dans le Volcan, la cité sans nom, les villes vanilla et les villes du serveur (comme Sobek)');
 
 -- --------------------------------------------------------
 

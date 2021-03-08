@@ -28,7 +28,7 @@ submit.addEventListener('click', (e) => {
   }
   switchSubmit();
   let xhr = new XMLHttpRequest();
-  xhr.open("POST", "../fonctions/sendmail.php");
+  xhr.open("POST", "../fonctions/sendmail_ovh.php");
   xhr.withCredentials = true;
   let formData = new FormData();
   formData.append("email", email.value);

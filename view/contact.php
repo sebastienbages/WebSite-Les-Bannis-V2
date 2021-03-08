@@ -31,7 +31,7 @@ $css_responsive ='../css/contact_responsive.css';
 
     <p>En espérant vous rencontrer prochainement sur notre serveur ou notre <a id="discord" href="https://discord.gg/SMZJWyf" target="_blank" rel="noopener noreferrer nofollow">discord</a>.</p>
 
-    <form action="../fonctions/sendmail.php" method="post" class="mx-auto mt-5" id="form-email">
+    <form action="#" method="post" class="mx-auto mt-5" id="form-email">
         <div class="col-md-6 mx-auto">
             <input type="email" class="form-control my-3" placeholder="email@example.com" name="email" id="email" required>
         </div>
