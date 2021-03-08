@@ -18,7 +18,7 @@
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="627" />
         <meta property="og:image:alt" content="L'arène de Sobek !" />
-        <link rel="shortcut icon" type="image/png" href="../img/belor.png" />
+        <link rel="shortcut icon" type="image/png" href="../img/favicon.ico" />
         <link rel="stylesheet" href="../css/loader.css">
         <link rel="stylesheet" href="<?= $css ?>"/>
         <link rel="stylesheet" href="<?= $css_responsive ?>"/>

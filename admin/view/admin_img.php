@@ -28,8 +28,6 @@ $path = glob($dir . '/*');
         <input type="submit" value="ENVOYER" id="submit" class="btn btn-danger">
     </form>
 
-    <?php require('../fonctions/add_img_error.php'); ?>
-
 </div>
 
 <div id="gestion">

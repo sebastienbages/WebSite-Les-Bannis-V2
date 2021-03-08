@@ -11,10 +11,6 @@ $css_responsive = '../css/admin_quest_responsive.css';
 $dir= '../../img/quest';
 //Liste les fichiers du répertoire avec leurs chemins relatif
 $path = glob($dir . '/*');
-
-//MESSAGES D'ERREUR
-require('../fonctions/msg_error.php');
-
 //CONNEXION BDD
 require('../../fonctions/db_connect.php');
 $bdd = db_connect();
@@ -43,8 +39,13 @@ $request_quest = request_quest($bdd);
         <br>
         <textarea name="article" cols="30" rows="20" id="article"></textarea>
         <br>
-        <label for="img" class="white">Image à associer</label>
-        <br>
+        <!-- <label for="img" class="white">Image à associer</label> -->
+        <div class="form-check d-flex justify-content-center align-items-center">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label mx-3 white" for="flexCheckChecked">
+                Insérer image
+            </label>
+        </div>
         <select name="img" id="image" class="mb-3">
 
             <?php
@@ -56,43 +57,27 @@ $request_quest = request_quest($bdd);
                     $file = $file['basename'];
                     //Modification de la source de l'image
                     $value = str_replace('../../', '../', $value);
-
                     echo '<option value="' . $value . '">' . $file . '</option>';
                 }
 
             ?>
 
         </select>
-
         <br>
         <img src="" alt="" id="image-selected" class="w-25">
         <br>
-        <input type="submit" value="ENREGISTRER" id="submit" class="btn btn-danger">
+        <input type="submit" value="ENREGISTRER" class="btn btn-danger submit-add-quest">
+        <button class="btn btn-danger submit-loading hidden" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Envoi en cours
+        </button>
     </form>
-
-    <?php 
-
-        if (isset($_GET['msg'])) 
-        {
-            msg_add_quest($_GET['msg']);
-        }
-    
-    ?>
 
 </div>
 
 <div id="gestion">
 
     <h1 class="white center uppercase">Liste des quêtes enregistrées</h1>
-
-    <?php 
-
-        if (isset($_GET['msg'])) 
-        {
-            msg_del_quest($_GET['msg']);
-        }
-    
-    ?>
 
     <div class="table-responsive">
         <table class="white table table-bordered text-center w-75 mx-auto">
@@ -113,9 +98,9 @@ $request_quest = request_quest($bdd);
                             if ($quest['image'] != null) {
                                 echo '<tr>
                                         <td class="center align-middle">'. $quest['id'] .'
-                                            <form action="../fonctions/del_quest.php" method="post" class="3">
+                                            <form action="#" method="post" class="3">
                                                 <input type="text" name="id" class="hidden" value="' . $quest['id'] . '" required>
-                                                <input type="submit" value="Supprimer" class="btn btn-outline-danger">
+                                                <input type="submit" value="Supprimer" class="btn btn-outline-danger submit-quest">
                                             </form>
                                         </td>
                                         <td class="center align-middle">' . $quest['date_ajout'] . '</td>
@@ -127,9 +112,9 @@ $request_quest = request_quest($bdd);
                             else {
                                 echo '<tr>
                                         <td class="center align-middle">'. $quest['id'] .'
-                                            <form action="../fonctions/del_quest.php" method="post" class="3">
+                                            <form action="#" method="post" class="3">
                                                 <input type="text" name="id" class="hidden" value="' . $quest['id'] . '" required>
-                                                <input type="submit" value="Supprimer" class="btn btn-outline-danger">
+                                                <input type="submit" value="Supprimer" class="btn btn-outline-danger submit-quest">
                                             </form>
                                         </td>
                                         <td class="center align-middle">' . $quest['date_ajout'] . '</td>
@@ -146,6 +131,7 @@ $request_quest = request_quest($bdd);
 </div>
 
 <script src="../js/image.js"></script>
+<script src="../js/quest.js"></script>
 
 <?php $content = ob_get_clean(); ?>
 

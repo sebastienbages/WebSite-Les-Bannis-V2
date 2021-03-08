@@ -3,7 +3,6 @@
 //CONNEXION BDD
 require('../../fonctions/db_connect.php');
 $bdd = db_connect();
-
 //REQUEST
 $del = $bdd->prepare('DELETE FROM quest WHERE id = :id');
 
@@ -15,10 +14,9 @@ if (isset($_POST['id']))
     ));
 
     $del->closeCursor();
-
-    header('Location: ../view/admin_quest.php?msg=3');
+    return http_response_code(200);
 }
 else
 {
-    header('Location: ../view/admin_quest.php?msg=4');
+    return http_response_code(400);
 }

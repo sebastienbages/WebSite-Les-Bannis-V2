@@ -56,7 +56,7 @@ p
     color: #ffffff;
     text-align: center;
 }
-#submit
+.submit-add-quest, .submit-loading
 {
     margin: 2% 0;
 }

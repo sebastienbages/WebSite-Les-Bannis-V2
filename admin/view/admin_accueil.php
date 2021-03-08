@@ -38,6 +38,7 @@ $port = $request_port->fetch(PDO::FETCH_ASSOC);
             <input type="text" name="port" class="port" id="port" value="<?= $port['value'] ?>" required>
         </div>
         <input type="submit" value="Enregistrer" class="submit center btn btn-danger" id="submit">
+
         <?php 
 
         if (isset($_GET['msg'])) 
@@ -46,6 +47,7 @@ $port = $request_port->fetch(PDO::FETCH_ASSOC);
         }
         
         ?>
+        
     </form>
 
     <ul class="center">

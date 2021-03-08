@@ -38,13 +38,8 @@ h2 {
 p {
     font-size: 1.5em;
 }
-em {
-    text-shadow: 5px 5px 0.5em #cc0000, -5px -5px 0.5em #cc0000;
-    font-style: normal;
-}
 .img-quest {
     border-radius: 10px;
-    /* box-shadow: 3px 3px 3px black; */
     margin: 0 1%;
     max-width: 768px;
 }

@@ -7,9 +7,6 @@ $css = '../css/admin_rules.css';
 //CSS RESPONSIVE DE LA PAGE
 $css_responsive = '../css/admin_rules_responsive.css';
 
-//MESSAGES D'ERREUR
-require('../fonctions/msg_error.php');
-
 //CONNEXION BDD
 require('../../fonctions/db_connect.php');
 $bdd = db_connect();
@@ -33,15 +30,6 @@ $rules_rank = request_rules_rank($bdd);
 
   <h1 class="white center uppercase shadow-red my-5">gestion des règles</h1>
 
-  <?php 
-
-    if (isset($_GET['msg'])) 
-    {
-        msg_add_rule($_GET['msg']);
-    }
-    
-  ?>
-
   <div class="block-rules mt-5">
 
     <h2 class="white center uppercase red">Progression</h2>
@@ -52,10 +40,10 @@ $rules_rank = request_rules_rank($bdd);
       {
         echo('<div class="rule">
                 <p class="center white" >' . $progression['rule'] . '</p>
-                <form action="../fonctions/del_rule.php" method="post" class="my-0 mx-3">
-                  <input type="text" name="base" class="hidden" value="progression" required>
-                  <input type="text" name="id" class="hidden" value="' . $progression['id'] . '" required>
-                  <input type="submit" value="Supprimer" class="btn btn-outline-danger">
+                <form action="#" method="post" class="my-0 mx-3">
+                  <input type="text" name="base" class="hidden btn-base" value="progression" required>
+                  <input type="text" name="id" class="hidden btn-id" value="' . $progression['id'] . '" required>
+                  <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-rule">
                 </form>
               </div>'
             );
@@ -64,12 +52,10 @@ $rules_rank = request_rules_rank($bdd);
     ?>
 
     <form action="../fonctions/post_rule.php" method="post" class="mt-2">
-
       <input type="text" name="rule" class="input-rule" required>
-      <input type="text" name="base" class="hidden" value="progression" required>
+      <input type="text" name="base" class="hidden input-base" value="progression" required>
       <br>
       <input type="submit" value="AJOUTER" class="input-submit btn btn-danger mt-2">
-
     </form>
 
   </div>
@@ -84,10 +70,10 @@ $rules_rank = request_rules_rank($bdd);
       {
         echo('<div class="rule">
                 <p class="center white" >' . $construction['rule'] . '</p>
-                <form action="../fonctions/del_rule.php" method="post" class="my-0 mx-3">
-                  <input type="text" name="base" class="hidden" value="construction" required>
-                  <input type="text" name="id" class="hidden" value="' . $construction['id'] . '" required>
-                  <input type="submit" value="Supprimer" class="btn btn-outline-danger">
+                <form action="#" method="post" class="my-0 mx-3">
+                  <input type="text" name="base" class="hidden btn-base" value="construction" required>
+                  <input type="text" name="id" class="hidden btn-id" value="' . $construction['id'] . '" required>
+                  <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-rule">
                 </form>
               </div>'
             );
@@ -96,12 +82,10 @@ $rules_rank = request_rules_rank($bdd);
     ?>
 
     <form action="../fonctions/post_rule.php" method="post" class="mt-2">
-
       <input type="text" name="rule" class="input-rule" required>
-      <input type="text" name="base" class="hidden" value="construction" required>
+      <input type="text" name="base" class="hidden input-base" value="construction" required>
       <br>
       <input type="submit" value="AJOUTER" class="input-submit btn btn-danger mt-2">
-    
     </form>
 
   </div>
@@ -116,10 +100,10 @@ $rules_rank = request_rules_rank($bdd);
       {
         echo('<div class="rule">
                 <p class="center white" >' . $compagnon['rule'] . '</p>
-                <form action="../fonctions/del_rule.php" method="post" class="my-0 mx-3">
-                  <input type="text" name="base" class="hidden" value="compagnon" required>
-                  <input type="text" name="id" class="hidden" value="' . $compagnon['id'] . '" required>
-                  <input type="submit" value="Supprimer" class="btn btn-outline-danger">
+                <form action="#" method="post" class="my-0 mx-3">
+                  <input type="text" name="base" class="hidden btn-base" value="compagnon" required>
+                  <input type="text" name="id" class="hidden btn-id" value="' . $compagnon['id'] . '" required>
+                  <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-rule">
                 </form>
               </div>'
             );
@@ -128,12 +112,10 @@ $rules_rank = request_rules_rank($bdd);
     ?>
 
     <form action="../fonctions/post_rule.php" method="post" class="mt-2">
-
       <input type="text" name="rule" class="input-rule" required>
-      <input type="text" name="base" class="hidden" value="compagnon" required>
+      <input type="text" name="base" class="hidden input-base" value="compagnon" required>
       <br>
       <input type="submit" value="AJOUTER" class="input-submit btn btn-danger mt-2">
-    
     </form>
 
   </div>
@@ -148,10 +130,10 @@ $rules_rank = request_rules_rank($bdd);
       {
         echo('<div class="rule">
                 <p class="center white" >' . $economy['rule'] . '</p>
-                <form action="../fonctions/del_rule.php" method="post" class="my-0 mx-3">
-                  <input type="text" name="base" class="hidden" value="economy" required>
-                  <input type="text" name="id" class="hidden" value="' . $economy['id'] . '" required>
-                  <input type="submit" value="Supprimer" class="btn btn-outline-danger">
+                <form action="#" method="post" class="my-0 mx-3">
+                  <input type="text" name="base" class="hidden btn-base" value="economy" required>
+                  <input type="text" name="id" class="hidden btn-id" value="' . $economy['id'] . '" required>
+                  <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-rule">
                 </form>
               </div>'
             );
@@ -160,12 +142,10 @@ $rules_rank = request_rules_rank($bdd);
     ?>
 
     <form action="../fonctions/post_rule.php" method="post" class="mt-2">
-
       <input type="text" name="rule" class="input-rule" required>
-      <input type="text" name="base" class="hidden" value="economy" required>
+      <input type="text" name="base" class="hidden input-base" value="economy" required>
       <br>
       <input type="submit" value="AJOUTER" class="input-submit btn btn-danger mt-2">
-    
     </form>
 
   </div>
@@ -180,10 +160,10 @@ $rules_rank = request_rules_rank($bdd);
       {
         echo('<div class="rule">
                 <p class="center white" >' . $rank['rule'] . '</p>
-                <form action="../fonctions/del_rule.php" method="post" class="my-0 mx-3">
-                  <input type="text" name="base" class="hidden" value="rank" required>
-                  <input type="text" name="id" class="hidden" value="' . $rank['id'] . '" required>
-                  <input type="submit" value="Supprimer" class="btn btn-outline-danger">
+                <form action="#" method="post" class="my-0 mx-3">
+                  <input type="text" name="base" class="hidden btn-base" value="rank" required>
+                  <input type="text" name="id" class="hidden btn-id" value="' . $rank['id'] . '" required>
+                  <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-rule">
                 </form>
               </div>'
             );
@@ -192,16 +172,16 @@ $rules_rank = request_rules_rank($bdd);
     ?>
 
     <form action="../fonctions/post_rule.php" method="post" class="mt-2">
-
       <input type="text" name="rule" class="input-rule" required>
-      <input type="text" name="base" class="hidden" value="rank" required>
+      <input type="text" name="base" class="hidden input-base" value="rank" required>
       <br>
       <input type="submit" value="AJOUTER" class="input-submit btn btn-danger mt-2">
-    
     </form>
 
   </div>
 
 </div>
+
+<script src="../js/rules.js"></script>
 
 <?php require('../template/template_admin.php'); ?>

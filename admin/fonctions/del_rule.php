@@ -1,9 +1,5 @@
 <?php
 
-    //Auteur : Sébastien Bages
-    //Créé le : 02/03/2021
-    //Modifié le : 02/03/21
-
     //CONNEXION BDD
     require('../../fonctions/db_connect.php');
     $bdd = db_connect();
@@ -58,17 +54,16 @@
                     $del_rank->closeCursor();
                     break;  
             }
-            
-            header('Location: ../view/admin_rules.php');
+            http_response_code(200);
         }
         else 
         {
-            header('Location: ../view/admin_rules.php?msg=1');
+            http_response_code(400);
         }
     }
     else
     {
-        header('Location: ../view/admin_rules.php?msg=2');
+        http_response_code(400);
     }
 
 ?>

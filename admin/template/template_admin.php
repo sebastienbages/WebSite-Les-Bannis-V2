@@ -2,6 +2,14 @@
 <html lang="fr">
 
     <head>
+        <title><?= $title ?></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <meta name="robots" content="noindex">
+        <meta name="googlebot" content="noindex">
+        <link rel="shortcut icon" type="image/ico" href="../../img/favicon.ico" />
         <link rel="stylesheet" type="text/css" href="<?= $css ?>">
         <link rel="stylesheet" type="text/css" href="<?= $css_responsive ?>">
         <link rel="stylesheet" type="text/css" href="../../polices/stylesheet.css">
@@ -9,16 +17,6 @@
         <link rel="stylesheet" type="text/css" href="../../css/footer.css">
         <link rel="stylesheet" type="text/css" href="../../css/triangle.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-        <title><?= $title ?></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="description" content="">
-        <meta name="robots" content="noindex">
-        <meta name="googlebot" content="noindex">
-        <meta charset="UTF-8"/>
-        <meta name="format-detection" content="telephone=no"/>
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     </head>
 
     <body>

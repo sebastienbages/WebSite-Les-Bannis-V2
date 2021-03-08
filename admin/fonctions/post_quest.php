@@ -1,10 +1,5 @@
 <?php
 
-    //Auteur : Sébastien Bages
-    //Créé le : 30/09/2019
-    //Modifié le : 30/09/19
-
-
     //CONNEXION BDD
     require('../../fonctions/db_connect.php');
     $bdd = db_connect();
@@ -18,21 +13,19 @@
     $img = htmlspecialchars($_POST['img']);
 
     //AJOUT BASE DE DONNEE
-    if (isset($_POST['titre']) OR isset($_POST['article']))
+    if (isset($_POST['titre']) OR isset($_POST['article']) OR isset($_POST['img']))
     {
         $ajout->execute(array(
             'titre' => $titre,
             'article' => $article,
-            'image' => $img,
+            'image' => $img
         ));
-
         $ajout->closeCursor();
-
-        header('Location: ../view/admin_quest.php?msg=2');
+        return http_response_code(200);
     }
     else
     {
-        header('Location: ../view/admin_quest.php?msg=1');
+        return http_response_code(400);
     }
 
 ?>
