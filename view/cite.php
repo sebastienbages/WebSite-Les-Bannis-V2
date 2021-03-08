@@ -47,7 +47,7 @@ $css_responsive ='../css/city_responsive.css';
 
         </div>
 
-        <p class="white">Prouve ta valeur au combat devant des adversaires redoutables et deviens le Champion de la fosse</p>
+        <p class="white">Prouve ta valeur au combat devant des adversaires redoutables et deviens le nouveau Champion de Sobek</p>
 
     </article>
 

@@ -13,7 +13,7 @@
         <meta property="og:description" content="Serveur français Conan Exiles PC - PVP/PVE sans inscription avec Mods, Quêtes, Cité, Commerce et plein d'autres... Rejoignez notre nouvelle communauté !" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.lesbannis.fr" />
-        <meta property="og:image" content="https://www.lesbannis.fr/img/body/bodyquest_2560.jpg" />
+        <meta property="og:image" content="https://www.lesbannis.fr/img/body/bodyindex_1920.jpg" />
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="627" />

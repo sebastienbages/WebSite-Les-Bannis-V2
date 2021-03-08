@@ -6,7 +6,7 @@
 
     if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) 
     {
-      $to    = "sbages.dev@gmail.com";
+      $to    = "randgeur31@gmail.com";
       // adresse MAIL OVH liée à l’hébergement.
       $from  = "site-les-bannis@lesbannis.fr";
       ini_set("SMTP", "smtp.lesbannis.fr");   // Pour les hébergements mutualisés Windows de OVH

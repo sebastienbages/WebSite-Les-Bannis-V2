@@ -19,7 +19,7 @@
 
 @font-face {
     font-family: "hyborian2";
-    src: url('./conan/hyborian2.TTF') format('truetype');
+    src: url('./conan/hyborian2.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -31,5 +31,5 @@ body {
 }
 
 .hyborian {
-    font-family: "hyborian2";
+    font-family: "hyborian2" !important;
 }
