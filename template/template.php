@@ -10,7 +10,7 @@
         <meta name="author" content="Sebastien Bages" />
         <meta name="google-site-verification" content="pI-LsKR_HPIdNQBAGfnUnC1xuRB4LEDQkAicyBrz0ig"/>
         <meta property="og:title" content="&quot;Les Bannis&quot; Serveur FR Conan Exiles" />
-        <meta property="og:description" content="Serveur français Conan Exiles PC - PVP/PVE sans inscription avec Mods, Quêtes, Cité, Commerce et plein d'autres... Rejoignez notre nouvelle communauté !" />
+        <meta property="og:description" content="Serveur français Conan Exiles PC - PVP/PVE sans inscription avec Mods, Quêtes, Cité, Commerce et plein d'autres... Rejoignez notre communauté !" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.lesbannis.fr" />
         <meta property="og:image" content="https://www.lesbannis.fr/img/body/bodyindex_1920.jpg" />
