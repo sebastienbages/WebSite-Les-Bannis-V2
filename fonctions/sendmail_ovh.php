@@ -4,7 +4,9 @@
       return http_response_code(400);
     }
 
-    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) 
+    $masque = "/^[_a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+)*@([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,4}$/";
+
+    if(filter_var(preg_match($masque, $_POST['email']))) 
     {
       $to    = "randgeur31@gmail.com";
       // adresse MAIL OVH liée à l’hébergement.
@@ -51,7 +53,7 @@
     }
     else
     {
-      return http_response_code(200);
+      return http_response_code(400);
     }
 
 ?>

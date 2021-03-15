@@ -24,20 +24,20 @@ $newname = $now . "_" . $name;
 //Test présence du fichier
 if (isset($file) AND $file_error == 0)
 {
-    //Test de la taille du fichier (<350Ko)
-    if ($file_size <= 5000000)
+    //Test de la taille du fichier (<500Ko)
+    if ($file_size <= 520000)
     {
         //Vérification extension fichier + traitement
         if (in_array($extension, $extension_autorisees))
         {
             move_uploaded_file($file_tmp_name, "../../img/quest/$newname");
 
-            header('Location: ../view/admin_img.php?add=4');
+            header('Location: ../view/admin_img.php?add=3');
 
         }
         else
         {
-            header('Location: ../view/admin_img.php?add=3');
+            header('Location: ../view/admin_img.php?add=2');
         }
     }
     else

@@ -12,6 +12,9 @@ $dir= '../../img/quest';
 //Liste les fichiers du répertoire avec leurs chemins relatif
 $path = glob($dir . '/*');
 
+//MESSAGE D'ERREUR
+require('../fonctions/msg_error.php');
+
 ?>
 
 <?php ob_start(); ?>
@@ -24,9 +27,15 @@ $path = glob($dir . '/*');
 
     <form action="../fonctions/post_img.php" method="post" enctype="multipart/form-data" class="center">
         <input type="file" name="image" id="file"><br>
-        <label for="image" id="image" class="white">(.jpg, .jpeg ou .png uniquement et 5Mo max)</label><br>
+        <label for="image" id="image" class="white">(.jpg, .jpeg ou .png uniquement et 500Ko max)</label><br>
         <input type="submit" value="ENVOYER" id="submit" class="btn btn-danger">
     </form>
+
+    <?php
+
+        msg_add_image($_GET['add']);
+
+    ?>
 
 </div>
 

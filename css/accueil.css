@@ -10,9 +10,6 @@ em, strong {
     font-style: normal;
     font-weight: normal;
 }
-.bold {
-    font-weight: bold;
-}
 .center {
     text-align: center;
 }
@@ -61,7 +58,7 @@ h2 {
     padding: 2% 0;
 }
 #aside_left {
-    width: 340px;
+    /* width: 340px; */
     height: auto;
 }
 iframe {

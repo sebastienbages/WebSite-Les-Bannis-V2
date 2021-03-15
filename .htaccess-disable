@@ -5,3 +5,6 @@ RewriteRule ^regles.html$ /view/regles.php [L]
 RewriteRule ^quetes.html$ /view/quetes.php [L]
 RewriteRule ^cite.html$ /view/cite.php [L]
 RewriteRule ^contact.html$ /view/contact.php [L]
+
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.lesbannis.fr/$1 [R,L]

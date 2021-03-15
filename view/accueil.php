@@ -39,50 +39,31 @@ $port = $request_port->fetch(PDO::FETCH_ASSOC);
     <aside id="aside_left" class="center">
 
         <h2 class="center shadow-red white">Rejoignez-nous sur discord</h2>
-        <iframe src="https://discordapp.com/widget?id=590837864510783489&theme=dark"></iframe>
+        <iframe src="https://discordapp.com/widget?id=590837864510783489&theme=dark" class="mb-4"></iframe>
         <br>
         <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HWR8KYMBEAMNE&source=url" target="_blank" rel="noopener noreferrer nofollow"><img id="paypal" src="../img/don.png" alt="faire un don avec paypal"></a>
-        <p id="help" class="white no-margin shadow-red">Aidez-nous à maintenir le serveur</p>
+        <p id="help" class="white no-margin shadow-red mb-4">Aidez-nous à maintenir le serveur</p>
         <br>
 
     </aside>        
 
-    <section id="section_index">
+    <section id="section_index" class="mb-5">
         
         <article class="white">
 
-            <h2 class="center shadow-red">Le serveur</h2>
+            <h2 class="center shadow-red">Bienvenue sur notre serveur</h2>
 
-            <p>Bienvenue exile sur notre <strong>serveur FR Conan Exiles !</strong></p>
+            <p>Le contenu que nous proposons est avant tout qualitatif dans le respect de l'univers de Conan et le médiéval fantastique. Attaché au bien-être et retours des membres de la communauté, nous sommes ouverts aux propositions de chacun. Nous privilégions la création de mods dédiés pour notre serveur plutôt que les constructions in-game afin de préserver les performances des joueurs et la stabilité du serveur. Nous sommes des passionnés et avons de nombreux projets en cours pour apporter du contenu supplémentaire...</p>
 
-            <p>Nous sommes deux joueurs vétérans sur Conan Exiles et nous avons décidé de créé notre propre serveur.</p>
+            <p>A ce titre, vous découvrirez Sobek, la cité principale de la terre des Bannis que nous avons entièrement modélisée de nos mains. Notre cité possède un marché avec de nombreux vendeurs et emplacements de vente réservés aux joueurs. Oserez-vous relever les défis de l'arène ? Nous sommes fier de vous proposer une arène moddée qui garantie une parfaite fluidité pendant les combats. Passez par la taverne afin de trouver du travail et partager une chope.</p>
 
-            <p>Pendant plusieurs mois, nous avons créé beaucoup de contenu à l'aide de plusieurs mods. Tout d'abord, nous avons
-            écris une histoire principale que vous pourrez découvrir au travers d'une série de plusieurs quêtes. Vous ferai la
-            connaissance de nombreux personnages plus atypiques les uns que les autres.
-            </p> 
+            <p>Durant votre périple, vous découvrirez une multitude de quêtes uniques qui vous aideront à progresser. Elles sont régulièrement enrichies par une équipe de créateurs au top ! Vous trouverez également des quêtes et défis journalier pour agrémenter vos occupations à haut level.</p>
 
-            <p>Vous découvrirez également de nombreuses quêtes indépendantes que nous enrichissons régulièrement par des
-            nouvelles.
-            </p>
-            
-            <p>Nous avons implanté une cité libre avec des marchands PNJ, des emplacements de vente pour les joueurs à venir
-            retirer au comptoir du commerce, une arêne de combat scénarisée pour obtenir de nouveaux rangs et divers lieux
-            insolites que vous devrez visiter pour trouver de nouvelles quêtes.
-            </p>
+            <p>En jeu, vous serez accompagnés par une équipe de modérateurs disponibles et à l'écoute. Notre communauté bienveillante sera également présente pour vous aider et vous accompagner dans votre progression. Nous n'avons pas vocation à faire du RP strict mais nous encourageons ce type d'échange et laissons libre choix aux joueurs. Ce que nous souhaitons avant tout est une bonne humeur, du respect, de l'humour et de la convivialité.</p>
 
-            <p>Selon les choix que vous ferez pendant l'histoire, vous obtiendrez des avantages spécifiques et accès à
-            des lieux particuliers ou chaque joueurs du même groupe pourra se retrouver. Les groupes adverses pourront
-            librement s'exprimer en PVP.
-            </p>
+            <p>Enfin, selon quelques règles à respecter, vous pouvez vous faire plaisir et construire de belles demeures.</p>
 
-            <p>Enfin, suivant quelques règles à respecter, vous pouvez vous faire plaisir et construire de belle demeure.</p>
-
-            <p>Nous n'avons pas vocation à faire du RP strict mais nous encourageons ce type d'échange entre joueurs. Ce que
-            nous souhaitons avant tout est une bonne humeur, politesse et convivialité en jeu et sur notre discord.
-            </p>
-
-            <p class="bold">Nous accueillons les joueurs de tous horizons et expérience.</p>
+            <p>A bientôt !</p>
 
         </article>
 
