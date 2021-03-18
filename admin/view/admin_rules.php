@@ -38,12 +38,17 @@ $rules_rank = request_rules_rank($bdd);
           
       while ($progression = $rules_progression->fetch())
       {
-        echo('<div class="rule">
-                <p class="center white" >' . $progression['rule'] . '</p>
-                <form action="#" method="post" class="my-0 mx-3">
+        echo('<div class="rule w-100 mx-auto">
+                <div class="my-0 mx-1 d-flex my-1 w-75">
+                  <input type="text" name="rule" class="input-rule w-100 mx-2" value="' . $progression['rule'] . '">
+                  <input type="text" name="base" class="hidden input-base" value="progression" required>
+                  <input type="text" name="id" class="hidden input-id" value="' . $progression['id'] . '" required>
+                  <input type="submit" value="Modifier" class="btn btn-primary btn-modify-rule">
+                </div>
+                <form action="#" method="post" class="my-0 mx-1">
                   <input type="text" name="base" class="hidden btn-base" value="progression" required>
                   <input type="text" name="id" class="hidden btn-id" value="' . $progression['id'] . '" required>
-                  <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-rule">
+                  <input type="submit" value="Supprimer" class="btn btn-danger btn-delete-rule">
                 </form>
               </div>'
             );
@@ -52,7 +57,7 @@ $rules_rank = request_rules_rank($bdd);
     ?>
 
     <form action="../fonctions/post_rule.php" method="post" class="mt-2">
-      <input type="text" name="rule" class="input-rule" required>
+      <input type="text" name="rule" class="input-rule w-75" required>
       <input type="text" name="base" class="hidden input-base" value="progression" required>
       <br>
       <input type="submit" value="AJOUTER" class="input-submit btn btn-danger mt-2">
@@ -68,12 +73,17 @@ $rules_rank = request_rules_rank($bdd);
           
       while ($construction = $rules_constructions->fetch())
       {
-        echo('<div class="rule">
-                <p class="center white" >' . $construction['rule'] . '</p>
-                <form action="#" method="post" class="my-0 mx-3">
+        echo('<div class="rule w-100 mx-auto">
+                <div class="my-0 mx-1 d-flex my-1 w-75">
+                  <input type="text" name="rule" class="input-rule w-100 mx-2" value="' . $construction['rule'] . '">
+                  <input type="text" name="base" class="hidden input-base" value="construction" required>
+                  <input type="text" name="id" class="hidden input-id" value="' . $construction['id'] . '" required>
+                  <input type="submit" value="Modifier" class="btn btn-primary btn-modify-rule">
+                </div>
+                <form action="#" method="post" class="my-0 mx-1">
                   <input type="text" name="base" class="hidden btn-base" value="construction" required>
                   <input type="text" name="id" class="hidden btn-id" value="' . $construction['id'] . '" required>
-                  <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-rule">
+                  <input type="submit" value="Supprimer" class="btn btn-danger btn-delete-rule">
                 </form>
               </div>'
             );
@@ -82,7 +92,7 @@ $rules_rank = request_rules_rank($bdd);
     ?>
 
     <form action="../fonctions/post_rule.php" method="post" class="mt-2">
-      <input type="text" name="rule" class="input-rule" required>
+      <input type="text" name="rule" class="input-rule w-75" required>
       <input type="text" name="base" class="hidden input-base" value="construction" required>
       <br>
       <input type="submit" value="AJOUTER" class="input-submit btn btn-danger mt-2">
@@ -98,12 +108,17 @@ $rules_rank = request_rules_rank($bdd);
           
       while ($compagnon = $rules_compagnons->fetch())
       {
-        echo('<div class="rule">
-                <p class="center white" >' . $compagnon['rule'] . '</p>
-                <form action="#" method="post" class="my-0 mx-3">
+        echo('<div class="rule w-100 mx-auto">
+                <div class="my-0 mx-1 d-flex my-1 w-75">
+                  <input type="text" name="rule" class="input-rule w-100 mx-2" value="' . $compagnon['rule'] . '">
+                  <input type="text" name="base" class="hidden input-base" value="compagnon" required>
+                  <input type="text" name="id" class="hidden input-id" value="' . $compagnon['id'] . '" required>
+                  <input type="submit" value="Modifier" class="btn btn-primary btn-modify-rule">
+                </div>
+                <form action="#" method="post" class="my-0 mx-1">
                   <input type="text" name="base" class="hidden btn-base" value="compagnon" required>
                   <input type="text" name="id" class="hidden btn-id" value="' . $compagnon['id'] . '" required>
-                  <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-rule">
+                  <input type="submit" value="Supprimer" class="btn btn-danger btn-delete-rule">
                 </form>
               </div>'
             );
@@ -112,7 +127,7 @@ $rules_rank = request_rules_rank($bdd);
     ?>
 
     <form action="../fonctions/post_rule.php" method="post" class="mt-2">
-      <input type="text" name="rule" class="input-rule" required>
+      <input type="text" name="rule" class="input-rule w-75" required>
       <input type="text" name="base" class="hidden input-base" value="compagnon" required>
       <br>
       <input type="submit" value="AJOUTER" class="input-submit btn btn-danger mt-2">
@@ -128,12 +143,17 @@ $rules_rank = request_rules_rank($bdd);
           
       while ($economy = $rules_economy->fetch())
       {
-        echo('<div class="rule">
-                <p class="center white" >' . $economy['rule'] . '</p>
-                <form action="#" method="post" class="my-0 mx-3">
+        echo('<div class="rule w-100 mx-auto">
+                <div class="my-0 mx-1 d-flex my-1 w-75">
+                  <input type="text" name="rule" class="input-rule w-100 mx-2" value="' . $economy['rule'] . '">
+                  <input type="text" name="base" class="hidden input-base" value="economy" required>
+                  <input type="text" name="id" class="hidden input-id" value="' . $economy['id'] . '" required>
+                  <input type="submit" value="Modifier" class="btn btn-primary btn-modify-rule">
+                </div>
+                <form action="#" method="post" class="my-0 mx-1">
                   <input type="text" name="base" class="hidden btn-base" value="economy" required>
                   <input type="text" name="id" class="hidden btn-id" value="' . $economy['id'] . '" required>
-                  <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-rule">
+                  <input type="submit" value="Supprimer" class="btn btn-danger btn-delete-rule">
                 </form>
               </div>'
             );
@@ -142,7 +162,7 @@ $rules_rank = request_rules_rank($bdd);
     ?>
 
     <form action="../fonctions/post_rule.php" method="post" class="mt-2">
-      <input type="text" name="rule" class="input-rule" required>
+      <input type="text" name="rule" class="input-rule w-75" required>
       <input type="text" name="base" class="hidden input-base" value="economy" required>
       <br>
       <input type="submit" value="AJOUTER" class="input-submit btn btn-danger mt-2">
@@ -158,12 +178,17 @@ $rules_rank = request_rules_rank($bdd);
           
       while ($rank = $rules_rank->fetch())
       {
-        echo('<div class="rule">
-                <p class="center white" >' . $rank['rule'] . '</p>
-                <form action="#" method="post" class="my-0 mx-3">
+        echo('<div class="rule w-100 mx-auto">
+                <div class="my-0 mx-1 d-flex my-1 w-75">
+                  <input type="text" name="rule" class="input-rule w-100 mx-2" value="' . $rank['rule'] . '">
+                  <input type="text" name="base" class="hidden input-base" value="rank" required>
+                  <input type="text" name="id" class="hidden input-id" value="' . $rank['id'] . '" required>
+                  <input type="submit" value="Modifier" class="btn btn-primary btn-modify-rule">
+                </div>
+                <form action="#" method="post" class="my-0 mx-1">
                   <input type="text" name="base" class="hidden btn-base" value="rank" required>
                   <input type="text" name="id" class="hidden btn-id" value="' . $rank['id'] . '" required>
-                  <input type="submit" value="Supprimer" class="btn btn-outline-danger btn-rule">
+                  <input type="submit" value="Supprimer" class="btn btn-danger btn-delete-rule">
                 </form>
               </div>'
             );
@@ -172,7 +197,7 @@ $rules_rank = request_rules_rank($bdd);
     ?>
 
     <form action="../fonctions/post_rule.php" method="post" class="mt-2">
-      <input type="text" name="rule" class="input-rule" required>
+      <input type="text" name="rule" class="input-rule w-75" required>
       <input type="text" name="base" class="hidden input-base" value="rank" required>
       <br>
       <input type="submit" value="AJOUTER" class="input-submit btn btn-danger mt-2">

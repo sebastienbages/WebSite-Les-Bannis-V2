@@ -4,7 +4,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-
 .white
 {
     color: #ffffff;
@@ -62,11 +61,11 @@ img
 {
     height: 200px;
 }
-.list_image
+.list-image
 {
     text-align: center;
-    display: inline-block;
-    margin: 0 1%;
+    /* display: inline-block; */
+    /* margin: 0 auto; */
 }
 #file
 {
