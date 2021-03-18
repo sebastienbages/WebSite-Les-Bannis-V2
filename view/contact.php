@@ -33,10 +33,10 @@ $css_responsive ='../css/contact_responsive.css';
 
     <form action="#" method="post" class="mx-auto mt-5" id="form-email">
         <div class="col-md-6 mx-auto">
-            <input type="email" class="form-control my-3" placeholder="email@example.com" name="email" id="email" required>
+            <input type="email" class="form-control my-3" placeholder="Votre email" name="email" id="email" required>
         </div>
         <div class="col-md-6 mx-auto">
-            <textarea class="form-control my-3" rows="10" placeholder="Message" name="message" id="message" required></textarea>
+            <textarea class="form-control my-3" rows="10" placeholder="Votre message" name="message" id="message" required></textarea>
         </div>
         <input type="submit" value="ENVOYER" class="btn btn-danger submit-email">
         <button class="btn btn-danger submit-loading hidden" type="button" disabled>

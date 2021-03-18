@@ -31,9 +31,7 @@ if (isset($file) AND $file_error == 0)
         if (in_array($extension, $extension_autorisees))
         {
             move_uploaded_file($file_tmp_name, "../../img/quest/$newname");
-
             header('Location: ../view/admin_img.php?add=3');
-
         }
         else
         {

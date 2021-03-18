@@ -1,7 +1,0 @@
-Options +FollowSymlinks
-RewriteEngine On
-RewriteRule ^accueil.html$ /view/accueil.php [L]
-RewriteRule ^regles.html$ /view/regles.php [L]
-RewriteRule ^quetes.html$ /view/quetes.php [L]
-RewriteRule ^cite.html$ /view/cite.php [L]
-RewriteRule ^contact.html$ /view/contact.php [L]

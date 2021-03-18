@@ -27,14 +27,14 @@ require('../fonctions/msg_error.php');
 
     <form action="../fonctions/post_img.php" method="post" enctype="multipart/form-data" class="center">
         <input type="file" name="image" id="file"><br>
-        <label for="image" id="image" class="white">(.jpg, .jpeg ou .png uniquement et 500Ko max)</label><br>
+        <label for="image" id="image" class="white">(.jpg, .jpeg ou .png uniquement, 500Ko max et 768px en largeur minimum)</label><br>
         <input type="submit" value="ENVOYER" id="submit" class="btn btn-danger">
     </form>
 
     <?php
-
-        msg_add_image($_GET['add']);
-
+        if (isset($_GET['add'])){
+            msg_add_image($_GET['add']);
+        }
     ?>
 
 </div>
