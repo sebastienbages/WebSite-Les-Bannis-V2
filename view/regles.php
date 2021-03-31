@@ -142,7 +142,7 @@ $rules_rank = request_rules_rank($bdd);
 
                 <p>L'ordre des Gardiens applique ce réglement</p>
                 <p>Ils prendront contact avec vous pour vous guider</p>
-                <p>Vous ferai leur connaissance dès le début de l'aventure...</p>
+                <p>Vous ferez leur connaissance dès le début de l'aventure...</p>
 
             </div>
 
