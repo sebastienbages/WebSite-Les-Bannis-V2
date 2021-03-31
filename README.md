@@ -71,6 +71,8 @@ This personal project served as a support to learn on my own the basic languages
 
 - Using of a SQL database
 
+- Contact form (Email)
+
 - SEO optimisation
 
 - 100% Responsive
