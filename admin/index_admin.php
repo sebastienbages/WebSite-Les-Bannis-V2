@@ -17,6 +17,9 @@
             case 'rules_admin':
                 header('Location: view/admin_rules.php');
                 break;
+            default:
+                header('Location: view/admin_accueil.php');
+                break;
         }
     }
     else

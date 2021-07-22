@@ -9,17 +9,12 @@
             case 'cite':
                 header('Location: cite.html');
                 break;
-            //PAGE QUETES
-            case 'quetes':
-                header('Location: quetes.html');
-                break;
-            //PAGE REGLES
-            case 'regles':
-                header('Location: regles.html');
-                break;
             //PAGE STAFF
             case 'contact':
                 header('Location: contact.html');
+                break;
+            default:
+                header('Location: accueil.html');
                 break;
         }
     }
