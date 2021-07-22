@@ -57,6 +57,8 @@ $port = $request_port->fetch(PDO::FETCH_ASSOC);
         <li class="white">Permet d'ajouter des quêtes</li>
         <li><a href="../index_admin.php?page=rules_admin" class="red">Gestion des Règles</a></li>
         <li class="white">Permet la gestion des règles du serveur</li>
+        <li><a href="../index_admin.php?page=topserveur" class="red">Classement Top Serveur</a></li>
+        <li class="white">Voir le classement des votes mensuels</li>
     </ul>
 
     <p id="exit_admin" class="center"><a href="../../index.php" id="return" class="red">Quitter panneau Administrateur</a></p>

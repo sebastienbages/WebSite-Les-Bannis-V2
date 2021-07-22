@@ -25,11 +25,10 @@ $port = $request_port->fetch(PDO::FETCH_ASSOC);
 <?php ob_start(); ?>
 
 <div id="title" class="flex">
-            
     <h1 id="main_title" class="center white no-margin hyborian">les bannis</h1>
+    <p class="subtitle center shadow-red white">Nouvelle version du site prochainement...</p>
     <p class="subtitle center white no-margin">@IP : <?= $ip['value'] ?>:<?= $port['value'] ?></p>
     <p class="size center white no-margin">Serveur français Conan Exiles</p>
-
 </div>
 
 <div id="triangle"></div>
@@ -37,14 +36,12 @@ $port = $request_port->fetch(PDO::FETCH_ASSOC);
 <div id="content" class="flex">
 
     <aside id="aside_left" class="center">
-
         <h2 class="center shadow-red white">Rejoignez-nous sur discord</h2>
         <iframe src="https://discordapp.com/widget?id=590837864510783489&theme=dark" class="mb-4"></iframe>
         <br>
-        <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HWR8KYMBEAMNE&source=url" target="_blank" rel="noopener noreferrer nofollow"><img id="paypal" src="../img/don.png" alt="faire un don avec paypal"></a>
+        <a href="https://www.paypal.com/donate/?hosted_button_id=8TVEEZ9SQQV8A" target="_blank" rel="noopener noreferrer nofollow"><img id="paypal" src="../img/don.png" alt="faire un don avec paypal"></a>
         <p id="help" class="white no-margin shadow-red mb-4">Aidez-nous à maintenir le serveur</p>
         <br>
-
     </aside>        
 
     <section id="section_index" class="mb-5">
