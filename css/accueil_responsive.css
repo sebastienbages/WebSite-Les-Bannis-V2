@@ -15,9 +15,6 @@
     }
 }
 @media all and (max-width: 780px) {
-    #main_title {
-        font-size: 3.5em;
-    }
     #ip {
         font-size: 2em;
     }
@@ -25,13 +22,22 @@
         padding: 0 2%;
         text-align: center;
     }
+    .youtube iframe {
+        width: 520px;
+        height: 275px;
+        margin: 0 2%;
+    }
 }
 @media all and (max-width: 480px) {
-    #main_title {
-        font-size: 3em;
+    #main_title img {
+        width: 80%;
+        height: auto;
     }
     #ip {
         font-size: 1.5em;
+    }
+    .subtitle {
+        font-size: 1.4em;
     }
 }
 @media all and (max-width: 360px) {
@@ -45,5 +51,8 @@
     #aside_left {
         width: 340px;
         height: auto;
+    }
+    .subtitle {
+        font-size: 1.2em;
     }
 }

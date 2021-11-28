@@ -37,11 +37,11 @@ article p {
 #main_title {
     font-size: 5em;
     text-transform: uppercase;
-    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 20px 0.5em #cc0000, 0px -20px 0.5em #cc0000, 30px 0px 0.5em #cc0000, -30px 0px 0.5em #cc0000;
+    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 10px 0.5em #cc0000, 0px -10px 0.5em #cc0000, 10px 0px 0.5em #cc0000, -10px 0px 0.5em #cc0000;
 }
 .subtitle {
     font-size: 1.8em;
-    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 20px 0.5em #cc0000, 0px -20px 0.5em #cc0000, 30px 00px 0.5em #cc0000, -30px 0px 0.5em #cc0000;
+    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 10px 0.5em #cc0000, 0px -10px 0.5em #cc0000, 10px 00px 0.5em #cc0000, -10px 0px 0.5em #cc0000;
 }
 #content {
     justify-content: space-around;
@@ -61,7 +61,7 @@ h2 {
     /* width: 340px; */
     height: auto;
 }
-iframe {
+.discord {
     height: 500px;
     width: 300px;
     border-radius: 10px;
@@ -72,9 +72,14 @@ iframe {
 #paypal {
     width: 280px;
     height: auto;
-    padding-top: 20%;
 }
-#help {
-    text-align: center;
-    font-size: 1.4em;
+.youtube {
+    justify-content: center;
+}
+.youtube iframe {
+    width: 680px;
+    height: 435px;
+}
+.link-discord img {
+    width: 25%;
 }
