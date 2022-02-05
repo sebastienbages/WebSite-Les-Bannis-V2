@@ -2,3 +2,5 @@
 .htaccess-disable
 .htpasswd-disable
 .htpasswd
+.idea
+.vscode

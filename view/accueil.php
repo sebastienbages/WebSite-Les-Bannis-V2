@@ -15,10 +15,14 @@ $bdd = db_connect();
 
 //REQUETE
 require('../fonctions/requests.php');
-$request_ip = request_rules_ip($bdd);
-$request_port = request_rules_port($bdd);
-$ip = $request_ip->fetch(PDO::FETCH_ASSOC);
-$port = $request_port->fetch(PDO::FETCH_ASSOC);
+$request_server1_ip = request_rules_ip($bdd, 1);
+$request_server1_port = request_rules_port($bdd, 1);
+$request_server2_ip = request_rules_ip($bdd, 2);
+$request_server2_port = request_rules_port($bdd, 2);
+$server1_ip = $request_server1_ip->fetch(PDO::FETCH_ASSOC);
+$server1_port = $request_server1_port->fetch(PDO::FETCH_ASSOC);
+$server2_ip = $request_server2_ip->fetch(PDO::FETCH_ASSOC);
+$server2_port = $request_server2_port->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -28,8 +32,8 @@ $port = $request_port->fetch(PDO::FETCH_ASSOC);
     <h1 id="main_title" class="center">
         <img src="../img/banderole.gif" alt="" srcset="">
     </h1>
-    <p class="subtitle center white no-margin">SERVEUR 1 : <?= $ip['value'] ?>:<?= $port['value'] ?></p>
-    <p class="subtitle center white no-margin">SERVEUR 2 : 213.246.45.68:7779</p>
+    <p class="subtitle center white no-margin">SERVEUR 1 : <?= $server1_ip['value'] ?>:<?= $server1_port['value'] ?></p>
+    <p class="subtitle center white no-margin">SERVEUR 2 : <?= $server2_ip['value'] ?>:<?= $server2_port['value'] ?></p>
 </div>
 
 <div id="triangle"></div>

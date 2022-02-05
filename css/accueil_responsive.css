@@ -56,3 +56,14 @@
         font-size: 1.2em;
     }
 }
+@media all and (max-height: 590px) {
+
+    #triangle {
+        display: none;
+    }
+    .youtube iframe {
+        width: 465px;
+        height: 220px;
+        margin: 0 2%;
+    }
+}

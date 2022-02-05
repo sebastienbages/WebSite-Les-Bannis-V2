@@ -1,0 +1,61 @@
+body {
+    background-image: url(../img/bodyadmin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.white
+{
+    color: #ffffff;
+}
+.center
+{
+    text-align: center;
+}
+.uppercase
+{
+    text-transform: uppercase;
+}
+.red
+{
+    color: #cc0000;
+}
+.shadow-red
+{
+    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 10px 0.5em #cc0000, 0px -10px 0.5em #cc0000, 10px 0px 0.5em #cc0000, -10px 0px 0.5em #cc0000;
+}
+.green 
+{
+    color: #33cc33;
+}
+.shadow-green
+{
+    text-shadow: -1px 1px 0 #33cc33, 1px 1px 0 #33cc33, 1px -1px 0 #33cc33, -1px -1px 0 #33cc33, 0px 10px 0.5em #33cc33, 0px -10px 0.5em #33cc33, 20px 0px 0.5em #33cc33, -20px 0px 0.5em #33cc33;
+}
+.blue
+{
+    color: #6699ff;
+}
+#return
+{
+    position: fixed;
+    top : 2%;
+    left : 2%;
+}
+#content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1em;
+}
+.list-players {
+    width: 50%;
+}
+li {
+    list-style: none;
+}
+p
+{
+    margin: 0 !important;
+}

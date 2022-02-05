@@ -16,10 +16,15 @@ require('../fonctions/msg_error.php');
 
 //REQUETE
 require('../../fonctions/requests.php');
-$request_ip = request_rules_ip($bdd);
-$request_port = request_rules_port($bdd);
-$ip = $request_ip->fetch(PDO::FETCH_ASSOC);
-$port = $request_port->fetch(PDO::FETCH_ASSOC);
+$request_server1_ip = request_rules_ip($bdd, 1);
+$request_server1_port = request_rules_port($bdd, 1);
+$server1_ip = $request_server1_ip->fetch(PDO::FETCH_ASSOC);
+$server1_port = $request_server1_port->fetch(PDO::FETCH_ASSOC);
+
+$request_server2_ip = request_rules_ip($bdd, 2);
+$request_server2_port = request_rules_port($bdd, 2);
+$server2_ip = $request_server2_ip->fetch(PDO::FETCH_ASSOC);
+$server2_port = $request_server2_port->fetch(PDO::FETCH_ASSOC);
 
 ?>
 
@@ -31,11 +36,15 @@ $port = $request_port->fetch(PDO::FETCH_ASSOC);
 
     <form action="../fonctions/post_adresse.php" method="post">
         <div>
-            <label for="ip" class="red d-block text-center">Adresse IP du serveur</label>
+            <label for="ip" class="red d-block text-center">Adresses IP des serveurs</label>
             <br>
-            <input type="text" name="ip" class="" id="ip" value="<?= $ip['value'] ?>" required>
+            <input type="text" name="server1ip" class="" id="ip" value="<?= $server1_ip['value'] ?>" required>
             <label for="port" class="red">:</label>
-            <input type="text" name="port" class="port" id="port" value="<?= $port['value'] ?>" required>
+            <input type="text" name="server1port" class="port" id="port" value="<?= $server1_port['value'] ?>" required>
+            <br>
+            <input type="text" name="server2ip" class="" id="ip" value="<?= $server2_ip['value'] ?>" required>
+            <label for="port" class="red">:</label>
+            <input type="text" name="server2port" class="port" id="port" value="<?= $server2_port['value'] ?>" required>
         </div>
         <input type="submit" value="Enregistrer" class="submit center btn btn-danger" id="submit">
 
@@ -51,14 +60,8 @@ $port = $request_port->fetch(PDO::FETCH_ASSOC);
     </form>
 
     <ul class="center">
-        <li><a href="../index_admin.php?page=img_admin" class="red">Gestion Images</a></li>
-        <li class="white">Permet d'ajouter et gérer les images uploadées</li>
-        <li><a href="../index_admin.php?page=quetes_admin" class="red">Gestion des Quêtes</a></li>
-        <li class="white">Permet d'ajouter des quêtes</li>
-        <li><a href="../index_admin.php?page=rules_admin" class="red">Gestion des Règles</a></li>
-        <li class="white">Permet la gestion des règles du serveur</li>
-        <li><a href="../index_admin.php?page=topserveur" class="red">Classement Top Serveur</a></li>
-        <li class="white">Voir le classement des votes mensuels</li>
+        <li><a href="../index_admin.php?page=manage_servers" class="red">Gestion Transferts</a></li>
+        <li class="white">Permet de visualiser l'état des serveurs</li>
     </ul>
 
     <p id="exit_admin" class="center"><a href="../../index.php" id="return" class="red">Quitter panneau Administrateur</a></p>

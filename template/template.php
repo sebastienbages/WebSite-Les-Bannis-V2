@@ -10,7 +10,7 @@
         <meta name="author" content="Sebastien Bages" />
         <meta name="google-site-verification" content="pI-LsKR_HPIdNQBAGfnUnC1xuRB4LEDQkAicyBrz0ig"/>
         <meta property="og:title" content="&quot;Les Bannis&quot; Serveur FR Conan Exiles" />
-        <meta property="og:description" content="Serveur français Conan Exiles PC - PVP/PVE sans inscription avec Mods, Quêtes, Cité, Commerce et plein d'autres... Rejoignez notre communauté !" />
+        <meta property="og:description" content="Serveur français Conan Exiles PC - PVP/PVE avec Mods, Quêtes, Capitale, Commerce et plein d'autres... Rejoignez notre communauté !" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.lesbannis.fr" />
         <meta property="og:image" content="https://www.lesbannis.fr/img/body/bodyindex_1920.jpg" />
@@ -26,7 +26,7 @@
         <link rel="stylesheet" href="../css/footer.css"/>
         <link rel="stylesheet" href="../polices/stylesheet.css"/>
         <link rel="stylesheet" href="../css/triangle.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
 
     <body>
@@ -55,7 +55,7 @@
         <?php require('../footer/footer.php'); ?>
 
         <script src="../js/loader.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     </body>
 

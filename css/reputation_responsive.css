@@ -1,0 +1,44 @@
+@media all and (max-width: 1690px) {
+
+    body {
+        background-position: center;
+    }
+}
+@media all and (max-width: 1024px) {
+
+    img {
+        width: 95%;
+    }
+}
+@media all and (max-width: 780px) {
+
+    h2 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+    .youtube iframe {
+        width: 520px;
+        height: 275px;
+        margin: 0 2%;
+    }
+}
+@media all and (max-width: 360px) {
+
+    iframe {
+        height: 400px;
+        width: 300px;
+    }
+}
+@media all and (max-height: 590px) {
+
+    #triangle {
+        display: none;
+    }
+    .youtube iframe {
+        width: 465px;
+        height: 220px;
+        margin: 0 2%;
+    }
+}

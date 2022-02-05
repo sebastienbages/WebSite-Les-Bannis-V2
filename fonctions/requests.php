@@ -30,15 +30,15 @@
         return $ajout;
     }
 
-    function request_rules_ip($bdd) {
-        $ajout = $bdd->query('SELECT value FROM config WHERE name = "ip"');
+    function request_rules_ip($bdd, $server) {
+        $ajout = $bdd->prepare("SELECT value FROM config WHERE name = ? AND server = ?");
+        $ajout->execute(["ip", $server]);
         return $ajout;
     }
 
-    function request_rules_port($bdd) {
-        $ajout = $bdd->query('SELECT value FROM config WHERE name = "port"');
+    function request_rules_port($bdd, $server) {
+        $ajout = $bdd->prepare("SELECT value FROM config WHERE name = ? AND server = ?");
+        $ajout->execute(["port", $server]);
         return $ajout;
     }
-
-
 ?>

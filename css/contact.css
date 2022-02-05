@@ -41,11 +41,3 @@ section {
     visibility: hidden;
     position: absolute;
 }
-.shadow-red
-{
-    text-shadow: -1px 1px 0 #cc0000, 1px 1px 0 #cc0000, 1px -1px 0 #cc0000, -1px -1px 0 #cc0000, 0px 10px 0.5em #cc0000, 0px -10px 0.5em #cc0000, 10px 0px 0.5em #cc0000, -10px 0px 0.5em #cc0000;
-}
-.shadow-green
-{
-    text-shadow: -1px 1px 0 #33cc33, 1px 1px 0 #33cc33, 1px -1px 0 #33cc33, -1px -1px 0 #33cc33, 0px 10px 0.5em #33cc33, 0px -10px 0.5em #33cc33, 20px 0px 0.5em #33cc33, -20px 0px 0.5em #33cc33;
-}

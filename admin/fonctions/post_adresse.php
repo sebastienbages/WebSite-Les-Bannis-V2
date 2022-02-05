@@ -10,27 +10,44 @@
     $bdd = db_connect();
 
     //REQUETES
-    $ajout_ip = $bdd->prepare('UPDATE config SET value = :ip WHERE name = "ip"');
-    $ajout_port = $bdd->prepare('UPDATE config SET value = :port WHERE name = "port"');
+    $ajout_server1_ip = $bdd->prepare('UPDATE config SET value = :ip WHERE name = "ip" AND server = 1');
+    $ajout_server1_port = $bdd->prepare('UPDATE config SET value = :port WHERE name = "port" AND server = 1');
+    $ajout_server2_ip = $bdd->prepare('UPDATE config SET value = :ip WHERE name = "ip" AND server = 2');
+    $ajout_server2_port = $bdd->prepare('UPDATE config SET value = :port WHERE name = "port" AND server = 2');
 
     //VARIABLES POST PROTEGEES
-    $ip = htmlspecialchars($_POST['ip']);
-    $port = htmlspecialchars($_POST['port']);
+    $server1ip = htmlspecialchars($_POST['server1ip']);
+    $server1port = htmlspecialchars($_POST['server1port']);
+    $server2ip = htmlspecialchars($_POST['server2ip']);
+    $server2port = htmlspecialchars($_POST['server2port']);
 
     //AJOUT BASE DE DONNEE
-    if (isset($_POST['ip']) OR isset($_POST['port']))
+    if (isset($_POST['server1ip']) OR isset($_POST['server1port'])
+        OR isset($_POST['server2ip']) OR isset($_POST['server2port']))
     {
-        $ajout_ip->execute(array(
-            'ip' => $ip
+        $ajout_server1_ip->execute(array(
+            'ip' => $server1ip
         ));
 
-        $ajout_ip->closeCursor();
+        $ajout_server1_ip->closeCursor();
 
-        $ajout_port->execute(array(
-            'port' => $port,
+        $ajout_server1_port->execute(array(
+            'port' => $server1port,
         ));
 
-        $ajout_port->closeCursor();
+        $ajout_server1_port->closeCursor();
+
+        $ajout_server2_ip->execute(array(
+            'ip' => $server2ip
+        ));
+
+        $ajout_server2_ip->closeCursor();
+
+        $ajout_server2_port->execute(array(
+            'port' => $server2port,
+        ));
+
+        $ajout_server2_port->closeCursor();
 
         header('Location: ../view/admin_accueil.php?msg=1');
     }
