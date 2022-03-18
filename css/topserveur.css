@@ -1,0 +1,21 @@
+body {
+    background-image: url(../img/body/bodytopserver_2560.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.shadow-red {
+    text-shadow: 5px 5px 0.5em #cc0000, -5px -5px 0.5em #cc0000;
+}
+.white {
+    color: #ffffff;
+}
+li {
+    list-style-type: none;
+}
+.img-topserver {
+    width: 10rem;
+}
+.error, ul {
+    min-height: 50vh;
+}

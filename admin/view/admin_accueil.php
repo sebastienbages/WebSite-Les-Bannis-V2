@@ -38,10 +38,12 @@ $server2_port = $request_server2_port->fetch(PDO::FETCH_ASSOC);
         <div>
             <label for="ip" class="red d-block text-center">Adresses IP des serveurs</label>
             <br>
+            <p class="white m-0">Serveur 1</p>
             <input type="text" name="server1ip" class="" id="ip" value="<?= $server1_ip['value'] ?>" required>
             <label for="port" class="red">:</label>
             <input type="text" name="server1port" class="port" id="port" value="<?= $server1_port['value'] ?>" required>
             <br>
+            <p class="white m-0">Serveur 2</p>
             <input type="text" name="server2ip" class="" id="ip" value="<?= $server2_ip['value'] ?>" required>
             <label for="port" class="red">:</label>
             <input type="text" name="server2port" class="port" id="port" value="<?= $server2_port['value'] ?>" required>
