@@ -61,8 +61,9 @@ $server1_port = $request_server1_port->fetch(PDO::FETCH_ASSOC);
 
             <p class="m-2">Durant votre périple, vous découvrirez une multitude de quêtes uniques qui vous aideront à progresser. Elles sont régulièrement enrichies par une équipe de créateurs au top ! Vous trouverez également des quêtes et défis journalier pour agrémenter vos occupations à haut level.</p>
 
+
             <div class="flex youtube">
-                <iframe src="https://www.youtube.com/embed/6OeSR0wugjw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/mzuA0TYLEgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
 
             <p class="m-2">En jeu, vous serez accompagnés par une équipe de modérateurs disponibles et à l'écoute. Notre communauté bienveillante sera également présente pour vous aider et vous accompagner dans votre progression. Nous n'avons pas vocation à faire du RP strict mais nous encourageons ce type d'échange et laissons libre choix aux joueurs. Ce que nous souhaitons avant tout est une bonne humeur, du respect, de l'humour et de la convivialité.</p>
